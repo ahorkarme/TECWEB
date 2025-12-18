@@ -1,6 +1,6 @@
 /* Header */
 .header {
-    background-color: #7CB342;
+    background-color: #d98139;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -26,7 +26,7 @@ ul{
     margin: 0 ;
     padding: 0;
     overflow: hidden;
-    background-color: #283e06 ;
+    background-color: #5d063d ;
     position: auto;
     top: 0;
     left: 0;
@@ -39,7 +39,7 @@ ul{
   
   li a, .dropbtn {
     display: inline-block;
-    color: #d9ef9f;
+    color: #f8c94d;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -47,7 +47,7 @@ ul{
   
   
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: #445a14;
+    background-color: #d98139;
   }
   
   li.dropdown {
@@ -57,21 +57,21 @@ ul{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #d9ef9f;
+    background-color: #f8c94d;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
-    color: #203500;
+    color: #d98139;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
   }
   
-  .dropdown-content a:hover {background-color: #96ac60;}
+  .dropdown-content a:hover {background-color: #d98139;}
   
   .dropdown:hover .dropdown-content {
     display: block;
@@ -80,7 +80,7 @@ ul{
 /* Body */
 
 h1 {
-    color: #283e06;
+    color: #d98139;
     text-align: center;
     font-size: 50px;
     font-family:Calisto MT;
@@ -92,12 +92,12 @@ h1 {
     margin: 0 auto;
     width: 700px;
     height: auto;
-    border: 5px solid #7CB342;
+    border: 5px solid #d98139;
     border-radius: 10px;
 }
 
 body{
-  background-color: #eefdc7;
+  background-color: #f8c94d;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -109,7 +109,7 @@ section {
 }
 
 section h2 {
-    color: #283e06;
+    color: #d98139;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -136,14 +136,14 @@ section p {
 
 /* Marcadores personalizados */
 .ul.section li::marker {
-    color: #7CB342; /* Color del marcador */
+    color: #d98139; /* Color del marcador */
     font-size: 1.2rem; /* Tamaño del marcador */
 }
 
 
 /* Footer */
 .footer {
-  background-color: #1c1c1c;
+  background-color: #d98139;
   color: white;
   padding: 20px 20px;
   font-size: 0.9rem;
@@ -166,7 +166,7 @@ section p {
 }
 
 .footer-contact h3 {
-  color: #7CB342;
+  color: #d98139;
   margin-bottom: 10px;
   font-size: 1.2rem;
   font-family:Calisto MT;
@@ -189,7 +189,7 @@ section p {
 }
 
 .footer-bottom a {
-  color: #7CB342;
+  color: #d98139;
   text-decoration: none;
   margin: 0 5px;
 }
