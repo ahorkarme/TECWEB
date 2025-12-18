@@ -11,7 +11,7 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % totalImages;
     images.style.transform = `translateX(-${currentIndex * 100}%)`;
 });
-
+/*
 const opcions = [
     "Pelicula 1",
     "Pelicula 2",
@@ -37,4 +37,4 @@ function girar() {
         document.getElementById("resultat").innerText =
             "Resultado: " + opcions[index];
     }, 4000);
-}
+}*/
