@@ -1,0 +1,39 @@
+/*SELECTOR UNIVERSAL, selecciona tota la web*/
+
+*{
+	color: darkblue;
+}
+
+/*SELECTOR INDIVIDUAL,  selecciona l'element en concret. Si volem més d'un afegim una coma*/
+
+h1, h2{
+	color: hotpink;
+}
+
+/*SELECTOR DESCENDENTS, permet donar un estil especific. Si volem que només un element en concret tinga forma i tamany*/
+
+div article p{
+	font-size: 20px;
+	color: yellowgreen;
+}
+
+div p{
+	font-size: 20px;
+	color: turquoise;
+}
+
+p a{ /* Dona color a un enllaç en concret */
+	color: orangered;
+}
+
+.gran{
+	font-size: 28px;
+}
+
+#roig{
+	color: darkred;
+}
+
+#xicotet{
+	font-size: 38px;
+}

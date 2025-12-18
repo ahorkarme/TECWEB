@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="contacto.css">
+      <title>Pikmelearn</title>
+      <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Header -->
+    <div class="header">
+      <span>📞 621 34 56 78</span>
+      <a href="mailto:info@pikmelearn.com">✉️ info@pikmelearn.com</a>
+      <div class="social-media">
+          <a href="https://www.instagram.com/pikminbloom/"><img src="img/header-instagram.png" alt="Instagram"></a>
+          <a href="https://www.facebook.com/PikminBloom/"><img src="img/header-facebook.png" alt="Facebook"></a>
+          <a href="https://www.tiktok.com/discover/pikmin"><img src="img/header-tiktok.png" alt="TikTok"></a>
+          <a href="https://pikmin.nintendo.com/es/"><img src="img/header-linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <!-- Menu -->
+    <ul>
+      <li class="menu"><a href="index.html">INICIO</a></li>
+      <li class="dropdown menu">
+          <a href="javascript:void(0)" class="dropbtn">ODS</a>
+          <div class="dropdown-content">
+          <a href="ods-7.html">ODS 7</a>
+          <a href="ods-13.html">ODS 13</a>
+          <a href="ods-14.html">ODS 14</a>
+          <a href="ods-15.html">ODS 15</a>
+          </div>
+      </li>
+      
+      <li class="menu">
+          <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+          </div>
+      </li>
+      <li class="menu">
+          <a href='contacto.html' class="dropbtn">CONTACTO</a>
+          </div>
+      </li>   
+      
+  </ul>
+  </head>
+  <body>
+    <!-- Contacto -->
+    <h1>Contacto</h1>
+      <form id="form" action="mailto:info@pikmelearn.com" method="post" enctype="text/plain">
+        <fieldset>
+          <legend>Tus datos de contacto:</legend>
+          <br>
+          <label for="nom">Nombre: </label>
+          <input type="text" id="nom" name="nombre" placeholder="Escriba su nombre..." size="60" required autofocus>
+          <br>
+          <br>
+          <label for="correoe">Correo electrónico: </label>
+          <input type="text" id="correoe" name="correo" placeholder="Escriba su correo electrónico..." size="60" required>
+          <br>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Comentarios</legend>
+          <br>
+          <label for="com">Qué desea contarnos: </label>
+          <br>
+          <textarea id="comentario" name="comentario" rows="10" cols="55"></textarea>
+        </fieldset>
+        <button onclick="enviar()">Enviar</button>
+        <button onclick="reset()">Borrar todo</button>
+        <script src="contacto.js">
+        </script>
+      </form>
+  </body>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-contact">
+          <h3>CONTÁCTANOS</h3>
+          <p><strong>Móvil:</strong> 621 34 56 78</p>
+          <p><strong>Correo electrónico:</strong> info@pikmelearn.com</p>
+          <p><strong>Dirección:</strong> Camí de Vera, s/n, Algirós, 46022 València</p>
+      </div>
+      <div class="footer-bottom">
+          <p>© Copyright 2024 <strong>PIKMELEARN SL</strong> • Todos los derechos reservados.</p>
+          <p>
+              <a href="info.html">Aviso legal</a> • <a href="info.html">Política de privacidad</a> • <a href="info.html">Política de cookies</a> • <a href="info.html">Accesibilidad</a>
+          </p>
+          <div class="footer-logos">
+              <img src="img/upv-logo.png" alt="Logo Universitat Politècnica de València">
+              <img src="img/gtdm-logo.png" alt="Logo Grado en Tecnologia Digital y Multimédia">
+          </div>
+      </div>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,12 @@
+/*
+Estructura d'una regla CSS
+body, h1,p... --> Selector de l'element al que volem aplicar els efectes
+color --> Propietat, és l'efecte o canvi que anem a donar
+blue --> La variable que li donarem a la propietat
+*/
+h1 {
+	color:lightsteelblue;
+}
+p {
+	color:black;
+}

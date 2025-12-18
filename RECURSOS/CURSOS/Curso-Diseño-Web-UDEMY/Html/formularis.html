@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="utf-8"> 
+		<title>Formularis</title>
+	</head>
+	<body>
+		<form action="" method="">
+			<input type="text" name="nombre" placeholder="Nom:" maxlength="10" size="50" required> <!-- readonly, disabled, només lectura i inhabilitat-->
+			<br/>
+			<input type="email" name="correu" placeholder="Correu: ">
+			<br/>
+			<textarea name="missatge" id="missatge" placeholder="Missatge"></textarea>
+			<br/>
+			<label for="pais">Pais: </label> <!--per a que el for funcione has de indicar el id-->
+			<select name="Pais" id="Pais">
+				<option value="espanya">Espanya</option>
+				<option value="frança">França</option>
+				<option value="portugal">Portugal</option>
+			</select>
+			<br/>
+			<input type="radio" name="genere" value="home" id="home"><label for="home">Home</label>
+			<input type="radio" name="genere" value="dona" id="dona"><label for="dona">Dona</label>
+			<br/>
+			<input type="checkbox" name="termes" id="termes" required><label for="termes">Termes i Condicions</label>
+			<br/>
+			<input type="password" name="contrasenya" placeholder="Contrasenya: " required maxlength="15">
+			<br/>
+			<input type="color" name="color">
+			<br/>
+			<input type="email" name="correu" placeholder="Correu: " required>
+			<br/>
+			<input type="number" name="numero" min="1" max="50">
+			<br/>
+			<input type="range" name="rango" min="0" max="10">
+			<br/>
+			<input type="url" name="url" placeholder="Enllaç">
+			<br/>
+			<input type="submit">
+
+			<input type="submit" name="Enviar" >
+
+		</form>
+	
+	</body>
+</html>
