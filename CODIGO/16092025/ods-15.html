@@ -1,126 +1,128 @@
 <!DOCTYPE html>
-<html>
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="ods-15.css">
-      <title>Pikmelearn</title>
-      <link rel="icon" href="img/favicon.png" type="image/png">
-    <!-- Header -->
-    <div class="header">
-      <span>📞 621 34 56 78</span>
-      <a href="mailto:info@pikmelearn.com">✉️ info@pikmelearn.com</a>
-      <div class="social-media">
-          <a href="https://www.instagram.com/pikminbloom/"><img src="img/header-instagram.png" alt="Instagram"></a>
-          <a href="https://www.facebook.com/PikminBloom/"><img src="img/header-facebook.png" alt="Facebook"></a>
-          <a href="https://www.tiktok.com/discover/pikmin"><img src="img/header-tiktok.png" alt="TikTok"></a>
-          <a href="https://pikmin.nintendo.com/es/"><img src="img/header-linkedin.png" alt="LinkedIn"></a>
-      </div>
-    </div>
-    <!-- Menu -->
-    <ul>
-      <li class="menu"><a href="index.html">INICIO</a></li>
-      <li class="dropdown menu">
-          <a href="javascript:void(0)" class="dropbtn">ODS</a>
-          <div class="dropdown-content">
-          <a href="ods-7.html">ODS 7</a>
-          <a href="ods-13.html">ODS 13</a>
-          <a href="ods-14.html">ODS 14</a>
-          <a href="ods-15.html">ODS 15</a>
-          </div>
-      </li>
-      
-      <li class="menu">
-          <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
-          </div>
-      </li>
-      <li class="menu">
-          <a href='contacto.html' class="dropbtn">CONTACTO</a>
-          </div>
-      </li>   
-      
-    </ul> 
-</head>
-<body>
-<!-- ODS-15 -->
-    <h1>Objetivo de Desarrollo Sostenible 15</h1>
-    <h2>Vida en la Tierra</h2>
-        <p>¿Te imaginas un mundo sin bosques, animales o flores? ¡Sería muy triste! Por eso, el Objetivo 15 quiere proteger todos los ecosistemas de la Tierra, esos lugares como los bosques, las montañas y los ríos donde viven muchos animales y plantas.</p>
-    <h3>¿Qué significa el ODS 15? <img class="derecha" alt="bosque" title="bosque" src="img/img-ods15-1.jpg"  width="260"  height="340"></h3>
-        <p>Es un plan para cuidar nuestra casa grande, la naturaleza. Este objetivo busca:</p>
-        <ol>
-            <li class="pagina"><b> Cuidar los bosques:</b> No cortar árboles de más y plantar nuevos cuando sea necesario.</li>
-            <li class="pagina"><b>Proteger los animales y plantas:</b> Asegurarnos de que no desaparezcan.</li>
-            <li class="pagina"><b>Arreglar lugares dañados:</b> Ayudar a que las tierras y los ríos vuelvan a estar sanos.</li>
-        </ol>
-    <h3>¿Por qué es importante?</h3>
-        <p>La Tierra nos da muchas cosas que necesitamos para vivir, como aire limpio, agua, alimentos y lugares donde explorar y divertirnos. Pero si no cuidamos la naturaleza, podríamos perder todo eso.</p>
-        <p>Ahora mismo, la Tierra está enfrentando grandes problemas:</p>
-        <ol>
-            <li class="pagina"><b>Los bosques están desapareciendo: </b>La gente corta muchos árboles para sembrar plantas o construir. </li>
-            <li class="pagina"><b>Los animales y plantas están en peligro: </b>Algunos están desapareciendo porque no tienen dónde vivir.</li>
-            <li class="pagina"><b>El suelo se está dañando: </b>Lugares que eran fértiles, ahora son casi desiertos.</li>
-        </ol>
-    <h3>¿Qué podemos hacer para ayudar?</h3>
-        <ol>
-            <li class="pagina"><b>Plantar árboles: </b>Cada árbol ayuda a limpiar el aire y da hogar a animales.</li>
-            <li class="pagina"><b>No tirar basura: </b>Mantén limpio el lugar donde vives y cuida la naturaleza.</li>
-            <li class="pagina"><b>Ahorrar agua: </b>Es importante no desperdiciar este recurso.</li>
-            <li class="pagina"><b>Aprender y compartir: </b>Si sabemos más sobre cómo cuidar el planeta, podemos enseñarlo a otros.</li>
-        </ol>
-    <h3>El futuro que queremos</h3>
-        <p>Si todos trabajamos juntos, para el año 2030 podríamos tener un mundo más verde y lleno de vida. Y para 2050, la naturaleza podría estar completamente restaurada. ¡Sería increíble vivir en un planeta sano y feliz!</p>
-    <h3>¡Tú también eres parte del cambio!</h3>
-        <p>Cuidar la Tierra es como cuidar a un amigo: si la tratamos bien, nos devolverá cosas maravillosas.</p>
-        <p>¡Hagamos equipo para proteger nuestro hogar!</p>
-    <br>
-    
-    <!-- Minijuego -->
-    <h3 class="juego">🌳 ¡Planta un Bosque! 🌳</h3>
-    <p class="juego">¡Ayuda a solucionar la desaparición de los bosques plantando tu propio bosque!</p>
-    <img src="img/img-ods15-2.png" class="izquierda" alt="bosque" title="bosque"  width="90"  height="150" >
-    <div id="prado" ondragover="permitirSoltar(event)" ondrop="soltar(event)">
-    </div>
-    <div id="contenedor-arboles">
-      <!-- Imágenes de árboles -->
-      <img src="img/img-ods15-arbol1.png" id="arbol1" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol2.png" id="arbol2" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol3.png" id="arbol3" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol4.png" id="arbol4" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol5.png" id="arbol10" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol1.png" id="arbol5" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol2.png" id="arbol6" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol3.png" id="arbol7" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol4.png" id="arbol8" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      <img src="img/img-ods15-arbol5.png" id="arbol9" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-      
-    </div>
-    <button onclick="finalizar()">Finalizar</button>
-    <p id="mensaje"></p>
-    <script src="ods-15.js">  
-    </script>
-    <br><br>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cines Lumiére</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <!-- Header -->
+        <div class="header">
+            <span>📞 621 34 56 78</span>
+            <a href="mailto:info@cineslumiere.com">✉️ info@cineslumiere.com</a>
+            <div class="social-media">
+                <a href="https://www.instagram.com/lafilmoteca_gvaivc/"><img src="img/header-instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/IVCLaFilmotecaValenciana/"><img src="img/header-facebook.png" alt="Facebook"></a>
+                <a href="https://www.tiktok.com/@_lafilmoteca"><img src="img/header-tiktok.png" alt="TikTok"></a>
+                <a href="https://ivc.gva.es/val/audiovisual/programacio/valencia-la-filmoteca"><img src="img/header-linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <!-- Menu -->
+        <ul>
+            <li class="menu"><a href="index.html">INICIO</a></li>
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRAS ACTIVIDADES</a>
+                <div class="dropdown-content">
+                <a href="ods-7.html">La Cartelera</a>
+                <a href="ods-13.html">Nuestras Recomendaciones</a>
+                <a href="ods-14.html">Adivina quién viene al cine</a>
+                <a href="ods-15.html">Descubre nuestras salas</a>
+                </div>
+            </li>
+            
+            <li class="menu">
+                <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+                </div>
+            </li>
+            <li class="menu">
+                <a href='contacto.html' class="dropbtn">CONTACTO</a>
+                </div>
+            </li>   
+            
+        </ul>
+    </head>
 
-</body>
+    <body>
+    <!-- ODS-15 -->
+        <h1>Objetivo de Desarrollo Sostenible 15</h1>
+        <h2>Vida en la Tierra</h2>
+            <p>¿Te imaginas un mundo sin bosques, animales o flores? ¡Sería muy triste! Por eso, el Objetivo 15 quiere proteger todos los ecosistemas de la Tierra, esos lugares como los bosques, las montañas y los ríos donde viven muchos animales y plantas.</p>
+        <h3>¿Qué significa el ODS 15? <img class="derecha" alt="bosque" title="bosque" src="img/img-ods15-1.jpg"  width="260"  height="340"></h3>
+            <p>Es un plan para cuidar nuestra casa grande, la naturaleza. Este objetivo busca:</p>
+            <ol>
+                <li class="pagina"><b> Cuidar los bosques:</b> No cortar árboles de más y plantar nuevos cuando sea necesario.</li>
+                <li class="pagina"><b>Proteger los animales y plantas:</b> Asegurarnos de que no desaparezcan.</li>
+                <li class="pagina"><b>Arreglar lugares dañados:</b> Ayudar a que las tierras y los ríos vuelvan a estar sanos.</li>
+            </ol>
+        <h3>¿Por qué es importante?</h3>
+            <p>La Tierra nos da muchas cosas que necesitamos para vivir, como aire limpio, agua, alimentos y lugares donde explorar y divertirnos. Pero si no cuidamos la naturaleza, podríamos perder todo eso.</p>
+            <p>Ahora mismo, la Tierra está enfrentando grandes problemas:</p>
+            <ol>
+                <li class="pagina"><b>Los bosques están desapareciendo: </b>La gente corta muchos árboles para sembrar plantas o construir. </li>
+                <li class="pagina"><b>Los animales y plantas están en peligro: </b>Algunos están desapareciendo porque no tienen dónde vivir.</li>
+                <li class="pagina"><b>El suelo se está dañando: </b>Lugares que eran fértiles, ahora son casi desiertos.</li>
+            </ol>
+        <h3>¿Qué podemos hacer para ayudar?</h3>
+            <ol>
+                <li class="pagina"><b>Plantar árboles: </b>Cada árbol ayuda a limpiar el aire y da hogar a animales.</li>
+                <li class="pagina"><b>No tirar basura: </b>Mantén limpio el lugar donde vives y cuida la naturaleza.</li>
+                <li class="pagina"><b>Ahorrar agua: </b>Es importante no desperdiciar este recurso.</li>
+                <li class="pagina"><b>Aprender y compartir: </b>Si sabemos más sobre cómo cuidar el planeta, podemos enseñarlo a otros.</li>
+            </ol>
+        <h3>El futuro que queremos</h3>
+            <p>Si todos trabajamos juntos, para el año 2030 podríamos tener un mundo más verde y lleno de vida. Y para 2050, la naturaleza podría estar completamente restaurada. ¡Sería increíble vivir en un planeta sano y feliz!</p>
+        <h3>¡Tú también eres parte del cambio!</h3>
+            <p>Cuidar la Tierra es como cuidar a un amigo: si la tratamos bien, nos devolverá cosas maravillosas.</p>
+            <p>¡Hagamos equipo para proteger nuestro hogar!</p>
+        <br>
+        
+        <!-- Minijuego -->
+        <h3 class="juego">🌳 ¡Planta un Bosque! 🌳</h3>
+            <p class="juego">¡Ayuda a solucionar la desaparición de los bosques plantando tu propio bosque!</p>
+            <img src="img/img-ods15-2.png" class="izquierda" alt="bosque" title="bosque"  width="90"  height="150" >
+        <div id="prado" ondragover="permitirSoltar(event)" ondrop="soltar(event)">
+        </div>
+        <div id="contenedor-arboles">
+            <!-- Imágenes de árboles -->
+            <img src="img/img-ods15-arbol1.png" id="arbol1" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol2.png" id="arbol2" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol3.png" id="arbol3" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol4.png" id="arbol4" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol5.png" id="arbol10" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol1.png" id="arbol5" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol2.png" id="arbol6" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol3.png" id="arbol7" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol4.png" id="arbol8" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+            <img src="img/img-ods15-arbol5.png" id="arbol9" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
+        </div>
+        <button onclick="finalizar()">Finalizar</button>
+        <p id="mensaje"></p>
+        <script src="ods-15.js">  
+        </script>
+        <br><br>
+
+    </body>
+
 <!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-      <div class="footer-contact">
-          <h3>CONTÁCTANOS</h3>
-          <p><strong>Móvil:</strong> 621 34 56 78</p>
-          <p><strong>Correo electrónico:</strong> info@pikmelearn.com</p>
-          <p><strong>Dirección:</strong> Camí de Vera, s/n, Algirós, 46022 València</p>
-      </div>
-      <div class="footer-bottom">
-          <p>© Copyright 2024 <strong>PIKMELEARN SL</strong> • Todos los derechos reservados.</p>
-          <p>
-              <a href="info.html">Aviso legal</a> • <a href="info.html">Política de privacidad</a> • <a href="info.html">Política de cookies</a> • <a href="info.html">Accesibilidad</a>
-          </p>
-          <div class="footer-logos">
-              <img src="img/upv-logo.png" alt="Logo Universitat Politècnica de València">
-              <img src="img/gtdm-logo.png" alt="Logo Grado en Tecnologia Digital y Multimédia">
-          </div>
-      </div>
-  </div>
-</footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>CONTÁCTANOS</h3>
+                <p><strong>Móvil:</strong> 621 34 56 78</p>
+                <p><strong>Correo electrónico:</strong> info@cineslumiere.com</p>
+                <p><strong>Dirección:</strong> Camí de Vera, s/n, Algirós, 46022 València</p>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright 2025 <strong>CINES LUMIERE SL</strong> • Todos los derechos reservados.</p>
+                <p>
+                    <a href="info.html">Aviso legal</a> • <a href="info.html">Política de privacidad</a> • <a href="info.html">Política de cookies</a> • <a href="info.html">Accesibilidad</a>
+                </p>
+                <div class="footer-logos">
+                    <img src="img/upv-logo.png" alt="Logo Universitat Politècnica de València">
+                    <img src="img/gtdm-logo.png" alt="Logo Grado en Tecnologia Digital y Multimédia">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </html>
