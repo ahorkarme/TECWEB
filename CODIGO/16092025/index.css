@@ -267,6 +267,92 @@ body {
   color: #3E0138;
 }
 
+/* Ruleta */
+.ruleta-section {
+    background-color: #FFF6E5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.ruleta-content h2 {
+    font-size: 2.5rem;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3E0138;
+    margin-bottom: 20px;
+}
+
+.ruleta-content p {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #2B0A1F;
+    margin-bottom: 30px;
+}
+
+.ruleta-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.ruleta {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 8px solid #7C0E36;
+    background: conic-gradient(
+        #F8C94D 0deg 60deg,
+        #D98139 60deg 120deg,
+        #BA4228 120deg 180deg,
+        #9B1926 180deg 240deg,
+        #5D063D 240deg 300deg,
+        #3E0138 300deg 360deg
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.ruleta span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: white;
+    transform-origin: center;
+}
+
+.ruleta span:nth-child(1) { transform: rotate(0deg) translateY(-110px); }
+.ruleta span:nth-child(2) { transform: rotate(60deg) translateY(-110px); }
+.ruleta span:nth-child(3) { transform: rotate(120deg) translateY(-110px); }
+.ruleta span:nth-child(4) { transform: rotate(180deg) translateY(-110px); }
+.ruleta span:nth-child(5) { transform: rotate(240deg) translateY(-110px); }
+.ruleta span:nth-child(6) { transform: rotate(300deg) translateY(-110px); }
+
+.ruleta-button {
+    background-color: #7C0E36;
+    color: #F8C94D;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ruleta-button:hover {
+    background-color: #5D063D;
+}
+
+.ruleta-result {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #7C0E36;
+}
+
 /* Footer */
 .footer {
   background-color: #3E0138;
@@ -333,4 +419,32 @@ body {
 .footer-logos img {
   height: 40px;
   margin: 0 10px;
+}
+
+/* Ratón */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
 }

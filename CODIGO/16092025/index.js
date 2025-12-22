@@ -1,40 +1,73 @@
+/*    CARRUSEL    */
+
 const images = document.getElementById('carouselImages');
-const totalImages = images.children.length;
-let currentIndex = 0;
 
-document.getElementById('prevBtn').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    images.style.transform = `translateX(-${currentIndex * 100}%)`;
-});
+if (images) {
+    const totalImages = images.children.length;
+    let currentIndex = 0;
 
-document.getElementById('nextBtn').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalImages;
-    images.style.transform = `translateX(-${currentIndex * 100}%)`;
-});
-/*
-const opcions = [
-    "Pelicula 1",
-    "Pelicula 2",
-    "Pelicula 3",
-    "Pelicula 4",
-    "Pelicula 5",
-    "Pelicula 6"
-];
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-function girar() {
-    const ruleta = document.getElementById("ruleta");
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        images.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
 
-    const girs = 360 * 5;  
-    const aleatori = Math.floor(Math.random() * 360);  
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalImages;
+        images.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+}
 
-    const rotacioFinal = girs + aleatori;
 
-    ruleta.style.transform = `rotate(${rotacioFinal}deg)`;
+/*    RULETA    */
+
+const ruleta = document.getElementById("ruleta");
+const botonRuleta = document.getElementById("girarRuleta");
+const resultado = document.getElementById("resultadoRuleta");
+
+if (ruleta && botonRuleta && resultado) {
+
+    const opciones = [
+        "Drama",
+        "Comedia",
+        "Terror",
+        "Thriller",
+        "Sci-Fi",
+        "Romance"
+    ];
+
+    let giroActual = 0;
+
+    botonRuleta.addEventListener("click", () => {
+        const giroExtra = Math.floor(Math.random() * 360) + 1080; // mínim 3 voltes
+        giroActual += giroExtra;
+
+        ruleta.style.transform = `rotate(${giroActual}deg)`;
+
+        const anguloFinal = giroActual % 360;
+        const index = Math.floor((360 - anguloFinal) / 60) % opciones.length;
+
+        setTimeout(() => {
+            resultado.textContent = `🎬 Hoy te recomendamos: ${opciones[index]}`;
+        }, 4000);
+    });
+
+}
+
+/*    RATÓN    */
+
+document.addEventListener("mousemove", (e) => {
+    const glow = document.createElement("div");
+    glow.classList.add("cursor-glow");
+
+    glow.style.left = `${e.clientX - 6}px`;
+    glow.style.top = `${e.clientY - 6}px`;
+
+    document.body.appendChild(glow);
 
     setTimeout(() => {
-        const angle = aleatori % 360;
-        const index = Math.floor(angle / (360 / opcions.length));
-        document.getElementById("resultat").innerText =
-            "Resultado: " + opcions[index];
-    }, 4000);
-}*/
+        glow.remove();
+    }, 800);
+});

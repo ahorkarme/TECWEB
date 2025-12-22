@@ -1,95 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="contacto.css">
-        <title>Cines Lumiere</title>
-        <link rel="icon" href="img/favicon.png" type="image/png">
-      <link rel="icon" href="img/favicon.png" type="image/png">
-      <!-- Header -->
-      <div class="header">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cines Lumiere</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
         <span>📞 621 34 56 78</span>
         <a href="mailto:info@cineslumiere.com">✉️ info@cineslumiere.com</a>
         <div class="social-media">
-            <a href="https://www.instagram.com/lafilmoteca_gvaivc/"><img src="img/header-instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/IVCLaFilmotecaValenciana/"><img src="img/header-facebook.png" alt="Facebook"></a>
-            <a href="https://www.tiktok.com/@_lafilmoteca"><img src="img/header-tiktok.png" alt="TikTok"></a>
-            <a href="https://ivc.gva.es/val/audiovisual/programacio/valencia-la-filmoteca"><img src="img/header-linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/lafilmoteca_gvaivc/">
+                <img src="img/header-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/IVCLaFilmotecaValenciana/">
+                <img src="img/header-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@_lafilmoteca">
+                <img src="img/header-tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://ivc.gva.es/val/audiovisual/programacio/valencia-la-filmoteca">
+                <img src="img/header-linkedin.png" alt="LinkedIn">
+            </a>
         </div>
-      </div>
-      <!-- Menu -->
-      <ul>
-        <li class="menu"><a href="index.html">INICIO</a></li>
-        <li class="dropdown menu">
-            <a href="javascript:void(0)" class="dropbtn">ODS</a>
-            <div class="dropdown-content">
-            <a href="ods-7.html">La Cartelera</a>
-            <a href="ods-13.html">Nuestras Recomendaciones</a>
-            <a href="ods-14.html">Adivina quién viene al cine</a>
-            <a href="ods-15.html">Descubre nuestras salas</a>
-            </div>
-        </li>
-        
-        <li class="menu">
-            <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
-            </div>
-        </li>
-        <li class="menu">
-            <a href='contacto.html' class="dropbtn">CONTACTO</a>
-            </div>
-        </li>   
-        
-    </ul>
-    </head>
-    <body>
-      <!-- Contacto -->
-      <h1>Contacto</h1>
-        <form id="form" action="mailto:info@cineslumiere.com" method="post" enctype="text/plain">
-          <fieldset>
-            <legend>Tus datos de contacto:</legend>
-            <br>
-            <label for="nom">Nombre: </label>
-            <input type="text" id="nom" name="nombre" placeholder="Escriba su nombre..." size="60" required autofocus>
-            <br>
-            <br>
-            <label for="correoe">Correo electrónico: </label>
-            <input type="text" id="correoe" name="correo" placeholder="Escriba su correo electrónico..." size="60" required>
-            <br>
-          </fieldset>
-          
-          <fieldset>
-            <legend>Comentarios</legend>
-            <br>
-            <label for="com">Qué desea contarnos: </label>
-            <br>
-            <textarea id="comentario" name="comentario" rows="10" cols="55"></textarea>
-          </fieldset>
-          <button onclick="enviar()">Enviar</button>
-          <button onclick="reset()">Borrar todo</button>
-          <script src="contacto.js">
-          </script>
-        </form>
-    </body>
-<!-- Footer -->
+    </header>
+
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li class="menu"><a href="index.html">INICIO</a></li>
+
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">ODS</a>
+                <div class="dropdown-content">
+                    <a href="cartelera.html">La Cartelera</a>
+                    <a href="recomendaciones.html">Nuestras Recomendaciones</a>
+                    <a href="adivina.html">Adivina quién viene al cine</a>
+                    <a href="salas.html">Descubre nuestras salas</a>
+                </div>
+            </li>
+
+            <li class="menu">
+                <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+            </li>
+
+            <li class="menu">
+                <a href="contacto.html" class="dropbtn">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Contacto -->
+        <section>
+            <h1>Contacto</h1>
+
+            <form id="form"
+                  action="mailto:info@cineslumiere.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <fieldset>
+                    <legend>Tus datos de contacto</legend>
+
+                    <label for="nom">Nombre:</label><br>
+                    <input type="text"
+                           id="nom"
+                           name="nombre"
+                           placeholder="Escriba su nombre..."
+                           size="60"
+                           required
+                           autofocus>
+                    <br><br>
+
+                    <label for="correoe">Correo electrónico:</label><br>
+                    <input type="email"
+                           id="correoe"
+                           name="correo"
+                           placeholder="Escriba su correo electrónico..."
+                           size="60"
+                           required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios</legend>
+
+                    <label for="comentario">Qué desea contarnos:</label><br>
+                    <textarea id="comentario"
+                              name="comentario"
+                              rows="10"
+                              cols="55"></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit" onclick="enviar()">Enviar</button>
+                <button type="reset">Borrar todo</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
+
             <div class="footer-contact">
                 <h3>CONTÁCTANOS</h3>
                 <p><strong>Móvil:</strong> 621 34 56 78</p>
                 <p><strong>Correo electrónico:</strong> info@cineslumiere.com</p>
                 <p><strong>Dirección:</strong> Camí de Vera, s/n, Algirós, 46022 València</p>
             </div>
+
             <div class="footer-bottom">
                 <p>© Copyright 2025 <strong>CINES LUMIERE SL</strong> • Todos los derechos reservados.</p>
                 <p>
-                    <a href="info.html">Aviso legal</a> • <a href="info.html">Política de privacidad</a> • <a href="info.html">Política de cookies</a> • <a href="info.html">Accesibilidad</a>
+                    <a href="info.html">Aviso legal</a> •
+                    <a href="info.html">Política de privacidad</a> •
+                    <a href="info.html">Política de cookies</a> •
+                    <a href="info.html">Accesibilidad</a>
                 </p>
+
                 <div class="footer-logos">
                     <img src="img/upv-logo.png" alt="Logo Universitat Politècnica de València">
-                    <img src="img/gtdm-logo.png" alt="Logo Grado en Tecnologia Digital y Multimédia">
+                    <img src="img/gtdm-logo.png" alt="Logo Grado en Tecnología Digital y Multimedia">
                 </div>
             </div>
+
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="contacto.js"></script>
+
+</body>
 </html>
