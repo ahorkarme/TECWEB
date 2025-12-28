@@ -92,37 +92,46 @@ li.dropdown {
 body {
   background-color: #FFF6E5;
   margin: 0;
+  text-align: center;
+  color: #3E0138;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 /* Sobre Nosotros */
 h1, h2, h3 {
   text-align: center;
-  color: #283e06;
+  color: #3E0138;
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 h1 {
   margin-top: 60px;
   font-size: 40px;
+  text-align: center;
+  color: #3E0138;
+
 }
 
 h2 {
   font-size: 30px;
   margin-top: 30px;
+  text-align: center;
+  color: #3E0138;
 }
 
 h3 {
   font-size: 20px;
   font-style: italic;
-  color: #445a14;
+  color: #3E0138;
   margin-bottom: 20px;
 }
 
 .intro p, .info-section p {
-  color: #14532d;
+  color: #2B0A1F;
   font-size: 16px;
   margin: 20px 10%;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Video */

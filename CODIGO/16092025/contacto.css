@@ -96,20 +96,20 @@ body {
 }
 
 input{
- background-color: #eefdc7;
+ background-color: #F8C94D;
 }
 textarea{
- background-color: #eefdc7;
+ background-color: #F8C94D;
 }
 h1 {
-color: #283e06 ;
+color: rgba(62, 1, 56, 0.75) ;
 text-align: center;
 font-size: 40px;
 font-family: Calisto MT, cursive;
 margin-top: 60px;
 }
 legend{
- color: #203500;
+ color: #3E0138;
  font-family:Calisto MT;
  font-size: 17px;
  margin: 3% 8% 0% 8%;
@@ -119,13 +119,16 @@ fieldset{
   margin: 3% 8% 0% 8%;
 }
 button{
-  background-color: #283e06;
-  color: #eefdc7;
+  background-color: #F8C94D;
+  color: #3E0138;
   width: 130px;
   height: 40px;
   font-family:Calisto MT;
   font-size: 17px;
   margin: 2% 0% 4% 8% ;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 /* Footer */
