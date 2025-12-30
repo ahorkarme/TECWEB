@@ -88,115 +88,84 @@ li.dropdown {
   display: block;
 }
 
-/* Body */
+/* General */
 body {
   background-color: #FFF6E5;
+  margin: 0;
+  text-align: center;
+  color: #3E0138;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* Sobre Nosotros */
+h1, h2, h3 {
+  text-align: center;
+  color: #3E0138;
   margin: 0;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-/* Margen al texto */
-p, h1, h2, h3 {
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
-}
-
-/* Títulos */
 h1 {
-    color: #fb6f92;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Brush Script MT', cursive;
-    margin-top: 50px;
+  margin-top: 60px;
+  font-size: 40px;
+  text-align: center;
+  color: #3E0138;
+
 }
 
 h2 {
-    color: #f888a4;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Brush Script MT', cursive;
-    margin-top: 10px;
+  font-size: 30px;
+  margin-top: 30px;
+  text-align: center;
+  color: #3E0138;
 }
 
 h3 {
-    font-family: Calisto MT, cursive;
-    font-size: 25px;
-    color: #6c385a;
-    margin-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+  color: #3E0138;
+  margin-bottom: 20px;
 }
 
-p {
-    color: #6c385a;
-    font-family:Calisto MT;
-    font-size: 17px;
-    margin: 3% 8% 0% 8%;
-    text-align: justify;
-    }
-
-/* Estilo para listas */
-li.pagina{
-    color: #6c385a;
-    font-family:Calisto MT;
-    font-size: 17px;
-    text-align: justify;
-    margin: 3% 8% 0% 8%;
-}
-/* Estilo para imagen */
-img.derecha {
-    float: right;
-    margin:1% 3% 30% 1%; 
-    border: #6c385a 5px solid;
-    padding: 0.5%;
-  }
-  img.izquierda {
-    float: left;
-    margin:6% 1% 3% 10%; 
-    
-    padding: 0.5%;
-  }
-
-/* Minijuego */
-#game-container {
-    margin: 50px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    background-color: #fff;
-    border: 2px solid #fb6f92;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.intro p, .info-section p {
+  color: #2B0A1F;
+  font-size: 16px;
+  margin: 20px 10%;
+  text-align: center;
 }
 
-#scoreboard {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #fb6f92;
-    font-weight: bold;
+/* Video */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #fb6f92;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Calisto MT', cursive;
-    font-size: 16px;
+.video-container video {
+  max-width: 80%;
+  border: 5px solid #445a14;
+  border-radius: 10px;
 }
 
-button:hover {
-    background-color: #ff8fab;
+/* Galería */
+.photos-section {
+  text-align: center;
+  margin: 40px 0;
 }
 
-#question {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #6c385a;
-    font-family: 'Calisto MT', cursive;
+.photo-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.photo-box img {
+  width: 300px;
+  height: 250px;
+  border: 5px solid #445a14;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /* Footer */
@@ -265,4 +234,32 @@ button:hover {
 .footer-logos img {
   height: 40px;
   margin: 0 10px;
+}
+
+/* Ratón */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
 }

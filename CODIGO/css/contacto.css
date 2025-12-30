@@ -88,105 +88,47 @@ li.dropdown {
   display: block;
 }
 
-  /* PÁGINA */
+/* Página */
 body {
   background-color: #FFF6E5;
   margin: 0;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-  p, h1, h2, h3 {
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
-  }
-
+input{
+ background-color: #F8C94D;
+}
+textarea{
+ background-color: #F8C94D;
+}
 h1 {
-    color:#283618;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Brush Script MT', cursive;
-    margin-top: 50px;
+color: rgba(62, 1, 56, 0.75) ;
+text-align: center;
+font-size: 40px;
+font-family: Calisto MT, cursive;
+margin-top: 60px;
 }
-
-h2 {
-    color:#606c38 ;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Brush Script MT', cursive;
-    margin-top: 10px;
-}
-
-h3 {
-    font-family: Calisto MT, cursive;
-    font-size: 25px;
-    color:#606c38;
-    margin-top: 20px;
-  }
-
-p {
-    color: #606c38;
-    font-family:Calisto MT;
-    font-size: 17px;
-    margin: 3% 8% 0% 8%;
-    text-align: justify;
-    }
-
-li.pagina{
-  color: #606c38;
-  font-family:Calisto MT;
-  font-size: 17px;
-  text-align: justify;
+legend{
+ color: #3E0138;
+ font-family:Calisto MT;
+ font-size: 17px;
+ margin: 3% 8% 0% 8%;
+ text-align: justify;
+ }
+fieldset{
   margin: 3% 8% 0% 8%;
-
-}
-
-img.derecha {
-  float: right;
-  margin:1% 8% 3% 1%; 
-  border: #606c38 5px solid;
-  padding: 0.5%;
-}
-
-img.izquierda {
-  float: left;
-  margin:6% 1% 3% 10%; 
-  
-  padding: 0.5%;
-}
-
-/*JUEGO*/
-.juego{
-  text-align: center;
-}
-#prado {
-  width: 600px;
-  height: 325px;
-  border: 5px solid #bc6c25;
-  margin: 20px auto;
-  background-image: url('img/prado.jpg');
-  background-size: cover;
-  position: relative;
-}
-.arbol {
-  width: 100px;
-  cursor: grab;
-}
-#contenedor-arboles {
-  margin-top: 20px;
-  text-align: center;
-}
-#mensaje{
-  text-align: center;
 }
 button{
-  background-color: #606c38;
-  color: #fefae0;
+  background-color: #F8C94D;
+  color: #3E0138;
   width: 130px;
   height: 40px;
   font-family:Calisto MT;
   font-size: 17px;
-  margin: 0px 50px;
+  margin: 2% 0% 4% 8% ;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
 /* Footer */
@@ -255,4 +197,32 @@ button{
 .footer-logos img {
   height: 40px;
   margin: 0 10px;
+}
+
+/* Ratón */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
 }

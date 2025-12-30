@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cines Lumiére</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/cartelera.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
@@ -46,8 +46,12 @@
                 </div>
             </li>
 
-            <li class="menu">
-                <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
             </li>
 
             <li class="menu">
@@ -55,6 +59,7 @@
             </li>
         </ul>
     </nav>
+
 
     <!-- Contenido principal -->
     <main>
@@ -101,92 +106,6 @@
             <h2 style="color: #7C0E36;">PORCO ROSSO</h2>
             <p><i><b>Hayao Miyazaki</b> · Japón · 1992 · DOBLADA CAST. · Color · 94' · DCP</i></p><br>
         </section>
-        <!-- ODS 7 -->
-        <section>
-            <h1>Objetivo de Desarrollo Sostenible 7</h1>
-            <h2>Energía sostenible y no contaminante</h2>
-
-            <p>
-                ¿Te imaginas un mundo donde todos tengan luz y energía sin dañar la naturaleza?
-                Eso es lo que busca el Objetivo 7: que la energía que usamos sea buena para nosotros
-                y para el planeta.
-            </p>
-
-            <h3>
-                ¿Qué significa el ODS 7?
-                <img class="derecha"
-                     src="img/img-ods7-1.png"
-                     alt="Energía"
-                     title="Energía"
-                     width="200"
-                     height="350">
-            </h3>
-
-            <p>
-                Este objetivo es un plan para que todas las personas puedan tener energía
-                sin dañar el medio ambiente.
-            </p>
-
-            <ol>
-                <li class="pagina"><b>Que todos tengan energía:</b> Ayudar a quienes no tienen electricidad.</li>
-                <li class="pagina"><b>Usar energía limpia:</b> Apostar por sol, viento o agua.</li>
-                <li class="pagina"><b>Ahorrar energía:</b> Usar solo la necesaria.</li>
-            </ol>
-
-            <h3>¿Por qué es importante?</h3>
-
-            <p>
-                La energía nos permite vivir mejor, pero si se usa mal puede dañar el planeta.
-                Actualmente existen varios retos.
-            </p>
-
-            <ol>
-                <li class="pagina"><b>Falta de acceso:</b> Hay personas sin electricidad.</li>
-                <li class="pagina"><b>Contaminación:</b> El uso de petróleo y carbón ensucia el aire.</li>
-                <li class="pagina"><b>Desperdicio:</b> Consumimos más energía de la necesaria.</li>
-            </ol>
-
-            <h3>
-                ¿Qué podemos hacer para ayudar?
-                <img class="derecha"
-                     src="img/img-ods7-2.png"
-                     alt="Bombilla"
-                     title="Bombilla"
-                     width="300"
-                     height="150">
-            </h3>
-
-            <ol>
-                <li class="pagina"><b>Apagar luces:</b> Cuando no las usamos.</li>
-                <li class="pagina"><b>Usar bombillas eficientes:</b> Consumen menos energía.</li>
-                <li class="pagina"><b>Apostar por renovables:</b> Informarnos y apoyar su uso.</li>
-                <li class="pagina"><b>Concienciar:</b> Compartir la importancia del ahorro energético.</li>
-            </ol>
-
-            <h3>El futuro que queremos</h3>
-            <p>
-                Un mundo con energía limpia para todos es posible si trabajamos juntos.
-                Para 2030 podríamos vivir en un planeta más sano.
-            </p>
-
-            <h3>¡Tú también puedes ser un héroe de la energía!</h3>
-            <p>
-                Cuidar la energía es cuidar la Tierra.
-                ¡Con pequeñas acciones podemos lograr grandes cambios!
-            </p>
-        </section>
-
-        <!-- Minijuego -->
-        <section class="minijuego-container">
-            <h3 class="juego">💡 ¡Identifica las palabras sin relación! 💡</h3>
-            <p class="juego">
-                ¡Clica las palabras que no tengan relación con las energías renovables!
-            </p>
-
-            <div id="contenedor-palabras"></div>
-            <p id="mensaje"></p>
-        </section>
-
     </main>
 
     <!-- Footer -->
@@ -219,7 +138,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="cartelera.js"></script>
+    <script src="js/cartelera.js"></script>
 
 </body>
 </html>

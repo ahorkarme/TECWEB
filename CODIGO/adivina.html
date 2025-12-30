@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cines Lumiére</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/adivina.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
@@ -46,8 +46,12 @@
                 </div>
             </li>
 
-            <li class="menu">
-                <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
             </li>
 
             <li class="menu">
@@ -56,84 +60,9 @@
         </ul>
     </nav>
 
+
     <!-- Contenido principal -->
     <main>
-
-        <!-- ODS 14 -->
-        <section>
-            <h1>Objetivo de Desarrollo Sostenible 14</h1>
-            <h2>Vida Submarina</h2>
-
-            <p>
-                ¿Sabías que los océanos son como el corazón de nuestro planeta?
-                Dan vida, comida y hasta nos ayudan a respirar.
-                El Objetivo 14 busca proteger los mares, los ríos y toda la vida que vive en el agua.
-            </p>
-
-            <h3>
-                ¿Qué significa el ODS 14?
-                <img class="derecha" src="img/img-ods14-1.jpg" alt="Océano" title="Océano" width="350" height="250">
-            </h3>
-
-            <p>Es un plan para cuidar los océanos y la vida que hay en ellos. Aquí te cuento lo que busca lograr:</p>
-
-            <ol>
-                <li class="pagina"><b>Limpiar los mares:</b> No tirar basura al agua y evitar la contaminación.</li>
-                <li class="pagina"><b>Proteger a los animales marinos:</b> Que peces, tortugas y ballenas vivan seguros.</li>
-                <li class="pagina"><b>Cuidar los arrecifes de coral:</b> Son hogares para muchas especies.</li>
-            </ol>
-
-            <h3>¿Por qué es importante?</h3>
-
-            <p>
-                Los océanos nos dan oxígeno, alimentos y regulan el clima.
-                Si no los cuidamos, enfrentaremos grandes problemas.
-            </p>
-
-            <ol>
-                <li class="pagina"><b>Basura en el agua:</b> El plástico daña la vida marina.</li>
-                <li class="pagina"><b>Pesca excesiva:</b> Puede hacer desaparecer especies.</li>
-                <li class="pagina"><b>Calentamiento del agua:</b> Afecta arrecifes y animales.</li>
-            </ol>
-
-            <h3>¿Qué podemos hacer para ayudar?</h3>
-
-            <ol>
-                <li class="pagina"><b>No tirar basura:</b> Mantén limpios mares y ríos.</li>
-                <li class="pagina"><b>Usar menos plástico:</b> Reduce residuos.</li>
-                <li class="pagina"><b>Aprender sobre el océano:</b> El conocimiento ayuda a proteger.</li>
-                <li class="pagina"><b>Consumir pescado responsable:</b> Apoya la pesca sostenible.</li>
-            </ol>
-
-            <h3>El futuro que queremos</h3>
-            <p>
-                Imagina mares llenos de vida.
-                Si actuamos juntos, para 2030 podemos tener océanos más limpios.
-            </p>
-
-            <h3>¡Tú también puedes ser un protector del océano!</h3>
-            <p>
-                Pequeñas acciones hacen grandes cambios.
-                ¡El océano te necesita!
-            </p>
-        </section>
-
-        <!-- Minijuego -->
-        <section>
-            <h3 class="juego">🌊 ¡Limpia el océano! 🌊</h3>
-            <p class="juego">¡Ayuda a limpiar el fondo marino!</p>
-
-            <img src="img/img-ods14-2.png"
-                 class="izquierda"
-                 alt="Fondo marino"
-                 title="Océano"
-                 width="150"
-                 height="250">
-
-            <div id="contenedor-juego">
-                <canvas id="oceano"></canvas>
-            </div>
-        </section>
 
     </main>
 
@@ -167,7 +96,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="adivina.js"></script>
+    <script src="js/adivina.js"></script>
 
 </body>
 </html>

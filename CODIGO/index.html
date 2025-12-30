@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cines Lumiére</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
@@ -46,8 +46,12 @@
                 </div>
             </li>
 
-            <li class="menu">
-                <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
             </li>
 
             <li class="menu">
@@ -58,6 +62,7 @@
 
     <!-- Carousel -->
     <section class="carousel">
+        <h2>BIENVENIDOS AL CINE LUMIÉRE</h2>
         <div class="carousel-container">
             <div class="carousel-images" id="carouselImages">
 
@@ -85,50 +90,79 @@
         </div>
     </section>
 
+    <!-- Separador -->
+    <div class="section-divider"></div>
+
     <!-- Presentación -->
     <section class="presentacion">
         <h2>Nuestros recién llegados</h2>
 
         <div class="presentacion-container">
 
+            <!-- The Night of the Hunter -->
             <div class="presentacion-item">
-                <img src="img/img.png" alt="Película 01">
-                <h3>PELÍCULA 01</h3>
-                <p>Aquí va una descripción muy chula sobre una peli.</p>
+                <img src="img/the-night-of-the-hunter.jpg" alt="The Night of the Hunter">
+                <h3>THE NIGHT OF THE HUNTER</h3>
+                <p>
+                    Un thriller poético y oscuro sobre el bien, el mal y la infancia,
+                    convertido en un clásico del cine expresionista.
+                </p>
                 <a href="cartelera.html">Reserva tu entrada</a>
             </div>
 
+            <!-- The Great Beauty -->
             <div class="presentacion-item">
-                <img src="img/img.png" alt="Película 02">
-                <h3>PELÍCULA 02</h3>
-                <p>Aquí va una descripción muy chula sobre una peli.</p>
+                <img src="img/the-great-beauty.jpg" alt="The Great Beauty">
+                <h3>THE GREAT BEAUTY</h3>
+                <p>
+                    Un viaje visual y existencial por Roma que reflexiona sobre el arte,
+                    el paso del tiempo y la búsqueda de sentido.
+                </p>
                 <a href="cartelera.html">Reserva tu entrada</a>
             </div>
 
+            <!-- Parthenope -->
             <div class="presentacion-item">
-                <img src="img/img.png" alt="Película 03">
-                <h3>PELÍCULA 03</h3>
-                <p>Aquí va una descripción muy chula sobre una peli.</p>
+                <img src="img/parthenope.jpg" alt="Parthenope">
+                <h3>PARTHENOPE</h3>
+                <p>
+                    Una historia íntima y luminosa ambientada en Nápoles, donde el deseo,
+                    la identidad y la memoria se entrelazan.
+                </p>
                 <a href="cartelera.html">Reserva tu entrada</a>
             </div>
 
+            <!-- Frankenstein -->
             <div class="presentacion-item">
-                <img src="img/img.png" alt="Película 04">
-                <h3>PELÍCULA 04</h3>
-                <p>Aquí va una descripción muy chula sobre una peli.</p>
+                <img src="img/frankenstein.jpg" alt="Frankenstein">
+                <h3>FRANKENSTEIN</h3>
+                <p>
+                    El mito eterno del monstruo y su creador, una reflexión sobre la
+                    humanidad, el miedo y la soledad.
+                </p>
                 <a href="cartelera.html">Reserva tu entrada</a>
             </div>
 
         </div>
     </section>
 
+    <!-- Separador -->
+    <div class="section-divider"></div>
+
     <!-- Ruleta -->
     <section class="ruleta-section">
         <div class="ruleta-content">
-            <h2>¡GIRA LA RULETA!</h2>
-            <p>
-                ¿No sabes que ver hoy? Deja que la suerte lo escoja por ti
-            </p>
+
+            <div class="ruleta-text">
+                <h2>¡GIRA LA RULETA!</h2>
+                <p>¿No sabes qué ver hoy? Deja que la suerte lo escoja por ti</p>
+
+                <button class="ruleta-button" id="girarRuleta">
+                    GIRAR RULETA
+                </button>
+
+                <p class="ruleta-result" id="resultadoRuleta"></p>
+            </div>
 
             <div class="ruleta-container">
                 <div class="ruleta" id="ruleta">
@@ -141,11 +175,6 @@
                 </div>
             </div>
 
-            <button class="ruleta-button" id="girarRuleta">
-                GIRAR RULETA
-            </button>
-
-            <p class="ruleta-result" id="resultadoRuleta"></p>
         </div>
     </section>
 
@@ -162,7 +191,7 @@
     </section>
 
     <!-- JavaScript-->
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 
     <!-- Footer -->
     <footer class="footer">

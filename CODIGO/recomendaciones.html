@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cines Lumiére</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/recomendaciones.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
@@ -46,8 +46,12 @@
                 </div>
             </li>
 
-            <li class="menu">
-                <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
             </li>
 
             <li class="menu">
@@ -56,97 +60,9 @@
         </ul>
     </nav>
 
+
     <!-- Contenido principal -->
     <main>
-
-        <!-- ODS 13 -->
-        <section>
-            <h1>Objetivo de Desarrollo Sostenible 13</h1>
-            <h2>Acción por el clima</h2>
-
-            <p>
-                ¿Sabías que nuestro planeta está cambiando rápidamente?
-                El clima está en problemas y el Objetivo 13 busca que
-                actuemos juntos frente al cambio climático.
-            </p>
-
-            <h3>
-                ¿Qué significa el ODS 13?
-                <img class="derecha"
-                     src="img/img-ods13-1.jpg"
-                     alt="Acción por el clima"
-                     title="Acción"
-                     width="350"
-                     height="200">
-            </h3>
-
-            <p>Es un plan para proteger nuestro hogar, la Tierra. Este objetivo busca:</p>
-
-            <ol>
-                <li class="pagina"><b>Reducir la contaminación:</b> Usar menos energía sucia.</li>
-                <li class="pagina"><b>Prepararnos para el futuro:</b> Adaptarnos a los cambios climáticos.</li>
-                <li class="pagina"><b>Trabajar juntos:</b> Unir países y personas.</li>
-            </ol>
-
-            <h3>¿Por qué es importante?</h3>
-
-            <p>
-                El clima afecta al agua, los alimentos y los lugares donde vivimos.
-                Si no actuamos, los problemas aumentarán.
-            </p>
-
-            <ol>
-                <li class="pagina"><b>Calor extremo:</b> El planeta se calienta.</li>
-                <li class="pagina"><b>Tormentas y sequías:</b> Más fenómenos extremos.</li>
-                <li class="pagina"><b>Daños a la naturaleza:</b> Animales y ecosistemas en riesgo.</li>
-            </ol>
-
-            <h3>¿Qué podemos hacer para ayudar?</h3>
-
-            <ol>
-                <li class="pagina"><b>Ahorrar energía:</b> Apaga lo que no uses.</li>
-                <li class="pagina"><b>Transporte sostenible:</b> Camina o usa la bici.</li>
-                <li class="pagina"><b>Reciclar:</b> Reduce residuos.</li>
-                <li class="pagina"><b>Concienciar:</b> Habla del problema climático.</li>
-            </ol>
-
-            <h3>El futuro que queremos</h3>
-            <p>
-                Si actuamos ahora, para 2030 podremos tener un mundo más seguro
-                y sostenible para todos.
-            </p>
-
-            <h3>¡Tú también eres parte del cambio!</h3>
-            <p>
-                Proteger el clima es responsabilidad de todos.
-                ¡Cada acción cuenta!
-            </p>
-        </section>
-
-        <!-- Minijuego -->
-        <section>
-            <h3>♻️ Aprende a reciclar ♻️</h3>
-            <p>Clasifica los objetos en el contenedor correcto para reducir la contaminación.</p>
-
-            <img src="img/img-ods13-2.png"
-                 class="izquierda"
-                 alt="Bosque"
-                 title="Bosque"
-                 width="90"
-                 height="150">
-
-            <div id="game-container">
-                <div id="scoreboard">
-                    Puntos: <span id="score">0</span>
-                </div>
-
-                <button id="start-game">Iniciar Juego</button>
-                <p id="question"></p>
-
-                <button class="option" id="option-1"></button>
-                <button class="option" id="option-2"></button>
-            </div>
-        </section>
 
     </main>
 
@@ -180,7 +96,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="recomendaciones.js"></script>
+    <script src="js/recomendaciones.js"></script>
 
 </body>
 </html>

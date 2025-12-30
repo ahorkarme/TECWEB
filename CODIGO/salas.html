@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cines Lumiére</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/salas.css">
     <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
@@ -46,8 +46,12 @@
                 </div>
             </li>
 
-            <li class="menu">
-                <a href="sobrenosotros.html" class="dropbtn">SOBRE NOSOTROS</a>
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
             </li>
 
             <li class="menu">
@@ -55,7 +59,7 @@
             </li>
         </ul>
     </nav>
-
+    
     <!-- Contenido principal -->
     <main>
         <!-- trabajo cine -->
@@ -129,107 +133,6 @@
            
             
         </section>
-        
-        
-        <!-- ODS 15 -->
-        <section>
-            <h1>Objetivo de Desarrollo Sostenible 15</h1>
-            <h2>Vida en la Tierra</h2>
-
-            <p>
-                ¿Te imaginas un mundo sin bosques, animales o flores?
-                El Objetivo 15 busca proteger los ecosistemas de la Tierra
-                y toda la vida que depende de ellos.
-            </p>
-
-            <h3>
-                ¿Qué significa el ODS 15?
-                <img class="derecha"
-                     src="img/img-ods15-1.jpg"
-                     alt="Bosque"
-                     title="Bosque"
-                     width="260"
-                     height="340">
-            </h3>
-
-            <p>Este objetivo busca:</p>
-
-            <ol>
-                <li class="pagina"><b>Cuidar los bosques:</b> Evitar la deforestación.</li>
-                <li class="pagina"><b>Proteger animales y plantas:</b> Evitar su desaparición.</li>
-                <li class="pagina"><b>Restaurar ecosistemas:</b> Sanar tierras y ríos dañados.</li>
-            </ol>
-
-            <h3>¿Por qué es importante?</h3>
-
-            <p>
-                La Tierra nos proporciona aire, agua y alimentos.
-                Si no la cuidamos, perderemos estos recursos esenciales.
-            </p>
-
-            <ol>
-                <li class="pagina"><b>Deforestación:</b> Pérdida de bosques.</li>
-                <li class="pagina"><b>Especies en peligro:</b> Falta de hábitat.</li>
-                <li class="pagina"><b>Degradación del suelo:</b> Tierras fértiles dañadas.</li>
-            </ol>
-
-            <h3>¿Qué podemos hacer para ayudar?</h3>
-
-            <ol>
-                <li class="pagina"><b>Plantar árboles:</b> Ayuda al planeta.</li>
-                <li class="pagina"><b>No tirar basura:</b> Cuida tu entorno.</li>
-                <li class="pagina"><b>Ahorrar agua:</b> Protege los recursos.</li>
-                <li class="pagina"><b>Concienciar:</b> Comparte el conocimiento.</li>
-            </ol>
-
-            <h3>El futuro que queremos</h3>
-            <p>
-                Si actuamos juntos, para 2030 podremos vivir en un planeta
-                más verde y saludable.
-            </p>
-
-            <h3>¡Tú también eres parte del cambio!</h3>
-            <p>
-                Cuidar la Tierra es cuidar nuestro hogar común.
-            </p>
-        </section>
-
-        <!-- Minijuego -->
-        <section>
-            <h3 class="juego">🌳 ¡Planta un Bosque! 🌳</h3>
-            <p class="juego">
-                Ayuda a combatir la deforestación plantando tu propio bosque.
-            </p>
-
-            <img src="img/img-ods15-2.png"
-                 class="izquierda"
-                 alt="Bosque"
-                 title="Bosque"
-                 width="90"
-                 height="150">
-
-            <div id="prado"
-                 ondragover="permitirSoltar(event)"
-                 ondrop="soltar(event)">
-            </div>
-
-            <div id="contenedor-arboles">
-                <img src="img/img-ods15-arbol1.png" id="arbol1" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol2.png" id="arbol2" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol3.png" id="arbol3" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol4.png" id="arbol4" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol5.png" id="arbol5" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol1.png" id="arbol6" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol2.png" id="arbol7" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol3.png" id="arbol8" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol4.png" id="arbol9" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-                <img src="img/img-ods15-arbol5.png" id="arbol10" class="arbol" draggable="true" ondragstart="empezarArrastrar(event)">
-            </div>
-
-            <button onclick="finalizar()">Finalizar</button>
-            <p id="mensaje"></p>
-        </section>
-
     </main>
 
     <!-- Footer -->
@@ -262,7 +165,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="salas.js"></script>
+    <script src="js/salas.js"></script>
 
 </body>
 </html>

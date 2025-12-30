@@ -95,17 +95,47 @@ body {
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
+/* Separador entre secciones */
+.section-divider {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #7C0E36,
+        transparent
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+    position: relative;
+}
+
 /* Carousel */
+.carousel h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  color: #3E0138;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
 .carousel-container {
   position: relative;
   width: 100%;
   max-width: 1200px;
+  height: 500px;
   margin: 20px auto;
   overflow: hidden;
 }
 
 .carousel-images {
   display: flex;
+  height: 100%;
   transition: transform 0.5s ease;
 }
 
@@ -116,7 +146,8 @@ body {
 
 .carousel-images img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;     /* evita deformacions */
 }
 
 .carousel-text {
@@ -156,15 +187,16 @@ body {
 /* Presentación */
 .presentacion {
   text-align: center;
-  padding: 50px 10px;
+  padding: 15px 10px 40px;
   background-color: #FFF6E5;
 }
 
 .presentacion h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-family: Georgia, "Times New Roman", serif;
   color: #3E0138;
-  margin-bottom: 40px;
+  margin-top: 5px;          /* ↓ quasi enganxat */
+  margin-bottom: 30px;
 }
 
 .presentacion-container {
@@ -191,9 +223,10 @@ body {
 }
 
 .presentacion-item img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 15px;
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .presentacion-item h3 {
@@ -239,7 +272,8 @@ body {
   font-size: 2.5rem;
   font-family: Georgia, "Times New Roman", serif;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px; 
 }
 
 .conoce-content p {
@@ -270,29 +304,42 @@ body {
 /* Ruleta */
 .ruleta-section {
     background-color: #FFF6E5;
-    padding: 80px 20px;
-    text-align: center;
+    padding: 40px 20px 60px;
 }
 
-.ruleta-content h2 {
-    font-size: 2.5rem;
+.ruleta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* Text */
+.ruleta-text {
+    max-width: 420px;
+}
+
+.ruleta-text h2 {
+    font-size: 2.4rem;
     font-family: Georgia, "Times New Roman", serif;
     color: #3E0138;
+    margin: 0 0 15px;
+}
+
+.ruleta-text p {
     margin-bottom: 20px;
 }
 
-.ruleta-content p {
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    color: #2B0A1F;
-    margin-bottom: 30px;
-}
-
+/* Contenidor ruleta */
 .ruleta-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    align-items: center;
 }
 
+/* Cercle */
 .ruleta {
     width: 260px;
     height: 260px;
@@ -306,30 +353,45 @@ body {
         #5D063D 240deg 300deg,
         #3E0138 300deg 360deg
     );
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
+/* Span */
 .ruleta span {
     position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    color: white;
-    transform-origin: center;
+    top: 50%;
+    left: 50%;
+    font-size: 1.3rem;
+    pointer-events: none;
 }
 
-.ruleta span:nth-child(1) { transform: rotate(0deg) translateY(-110px); }
-.ruleta span:nth-child(2) { transform: rotate(60deg) translateY(-110px); }
-.ruleta span:nth-child(3) { transform: rotate(120deg) translateY(-110px); }
-.ruleta span:nth-child(4) { transform: rotate(180deg) translateY(-110px); }
-.ruleta span:nth-child(5) { transform: rotate(240deg) translateY(-110px); }
-.ruleta span:nth-child(6) { transform: rotate(300deg) translateY(-110px); }
+/* Posició correcta dins del cercle */
+.ruleta span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(30deg) translateY(-120px);
+}
 
+.ruleta span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(90deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(150deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(210deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(270deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(330deg) translateY(-120px);
+}
+
+/* Botó */
 .ruleta-button {
     background-color: #7C0E36;
     color: #F8C94D;
@@ -339,16 +401,10 @@ body {
     font-family: "Trebuchet MS", Arial, sans-serif;
     border-radius: 30px;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.ruleta-button:hover {
-    background-color: #5D063D;
 }
 
 .ruleta-result {
-    margin-top: 25px;
-    font-size: 1.2rem;
+    margin-top: 20px;
     font-family: Georgia, "Times New Roman", serif;
     color: #7C0E36;
 }

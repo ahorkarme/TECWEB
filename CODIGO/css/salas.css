@@ -88,23 +88,21 @@ li.dropdown {
   display: block;
 }
 
-/* Body */
+  /* PÁGINA */
 body {
   background-color: #FFF6E5;
   margin: 0;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-/* Margen al texto */
-p, h1, h2, h3 {
+  p, h1, h2, h3 {
     margin-left: 5%;
     margin-right: 5%;
     text-align: justify;
-}
+  }
 
-/* Títulos */
 h1 {
-    color: #1e4f6e;
+    color:#283618;
     text-align: center;
     font-size: 60px;
     font-family: 'Brush Script MT', cursive;
@@ -112,7 +110,7 @@ h1 {
 }
 
 h2 {
-    color: #2973a1;
+    color:#606c38 ;
     text-align: center;
     font-size: 50px;
     font-family: 'Brush Script MT', cursive;
@@ -122,63 +120,73 @@ h2 {
 h3 {
     font-family: Calisto MT, cursive;
     font-size: 25px;
-    color:#2d81b5;
+    color:#606c38;
     margin-top: 20px;
-}
+  }
 
 p {
-    color: #38436c;
+    color: #606c38;
     font-family:Calisto MT;
     font-size: 17px;
     margin: 3% 8% 0% 8%;
     text-align: justify;
     }
 
-/* Estilo para listas */
 li.pagina{
-    color: #38436c;
-    font-family:Calisto MT;
-    font-size: 17px;
-    text-align: justify;
-    margin: 3% 8% 0% 8%;
+  color: #606c38;
+  font-family:Calisto MT;
+  font-size: 17px;
+  text-align: justify;
+  margin: 3% 8% 0% 8%;
+
 }
-/* Estilo para imagen */
+
 img.derecha {
-    float: right;
-    margin:1% 3% 30% 1%; 
-    border:#5f9ea0 5px solid;
-    padding: 0.5%;
-  }
+  float: right;
+  margin:1% 8% 3% 1%; 
+  border: #606c38 5px solid;
+  padding: 0.5%;
+}
 
 img.izquierda {
-    float: left;
-    margin:1% 0% 0% 8%; 
-    padding: 0.5%;
-  }
-/* Minijuego */
+  float: left;
+  margin:6% 1% 3% 10%; 
+  
+  padding: 0.5%;
+}
+
+/*JUEGO*/
 .juego{
   text-align: center;
 }
-
-#contenedor-juego {
+#prado {
   width: 600px;
   height: 325px;
-  border: 5px solid #104160;
+  border: 5px solid #bc6c25;
   margin: 20px auto;
-  background-image: url('img/img-ods14-fondomarino.png');
+  background-image: url('img/prado.jpg');
   background-size: cover;
   position: relative;
 }
-
-canvas {
-    display: block;
+.arbol {
+  width: 100px;
+  cursor: grab;
 }
-.basura {
-    position: absolute;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
+#contenedor-arboles {
+  margin-top: 20px;
+  text-align: center;
+}
+#mensaje{
+  text-align: center;
+}
+button{
+  background-color: #606c38;
+  color: #fefae0;
+  width: 130px;
+  height: 40px;
+  font-family:Calisto MT;
+  font-size: 17px;
+  margin: 0px 50px;
 }
 
 /* Footer */
@@ -247,4 +255,32 @@ canvas {
 .footer-logos img {
   height: 40px;
   margin: 0 10px;
+}
+
+/* Ratón */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
 }

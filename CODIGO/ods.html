@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS · Cines Lumiére</title>
+    <link rel="stylesheet" href="css/ods.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <span>📞 621 34 56 78</span>
+        <a href="mailto:info@cineslumiere.com">✉️ info@cineslumiere.com</a>
+        <div class="social-media">
+            <a href="https://www.instagram.com/lafilmoteca_gvaivc/">
+                <img src="img/header-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/IVCLaFilmotecaValenciana/">
+                <img src="img/header-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@_lafilmoteca">
+                <img src="img/header-tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://ivc.gva.es/val/audiovisual/programacio/valencia-la-filmoteca">
+                <img src="img/header-linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </header>
+
+    <!-- Menú -->
+    <nav>
+        <ul>
+            <li class="menu"><a href="index.html">INICIO</a></li>
+
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRAS ACTIVIDADES</a>
+                <div class="dropdown-content">
+                    <a href="cartelera.html">La Cartelera</a>
+                    <a href="recomendaciones.html">Nuestras Recomendaciones</a>
+                    <a href="adivina.html">Adivina quién viene al cine</a>
+                    <a href="salas.html">Descubre nuestras salas</a>
+                </div>
+            </li>
+
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
+            </li>
+
+            <li class="menu">
+                <a href="contacto.html" class="dropbtn">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="ods-page">
+
+        <!-- INTRO -->
+        <section class="ods-intro">
+            <h1>Cine y ODS</h1>
+            <p>
+                En Cines Lumiére entendemos el cine como una herramienta cultural capaz de generar conciencia social, fomentar la inclusión y promover hábitos responsables en la sociedad.
+            </p>
+        </section>
+
+        <!-- BOTÓN CAMBIO ESTRUCTURA -->
+        <button id="cambiarVista" class="vista-btn">
+            Cambiar disposición de los ODS
+        </button>
+
+        <!-- CONTENEDOR ODS -->
+        <section class="ods-container" id="odsContainer">
+
+            <!-- ODS 10 -->
+            <article class="ods-block" data-ods="ODS 10">
+                <h2>ODS 10 · Reducción de las desigualdades</h2>
+
+                <img src="img/ods10.png" alt="ODS 10" class="ods-img">
+
+                <p>
+                    El cine da voz a colectivos diversos y promueve la igualdad de oportunidades
+                    a través de historias inclusivas.
+                </p>
+
+                <button class="ods-toggle">Ver acciones concretas</button>
+                <div class="ods-extra hidden">
+                    <p>
+                        Programación inclusiva, precios accesibles y ciclos de cine social
+                        para fomentar la diversidad cultural.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ODS 11 -->
+            <article class="ods-block" data-ods="ODS 11">
+                <h2>ODS 11 · Ciudades y comunidades sostenibles</h2>
+
+                <img src="img/ods11.png" alt="ODS 11" class="ods-img">
+
+                <p>
+                    Las salas de cine son espacios culturales que fortalecen la vida urbana
+                    y el encuentro comunitario.
+                </p>
+
+                <button class="ods-toggle">Ver acciones concretas</button>
+                <div class="ods-extra hidden">
+                    <p>
+                        Actividades culturales, eventos locales y promoción del ocio responsable
+                        dentro de la ciudad.
+                    </p>
+                </div>
+            </article>
+
+            <!-- ODS 12 -->
+            <article class="ods-block" data-ods="ODS 12">
+
+                <h2>ODS 12 · Producción y consumo responsables</h2>
+
+                <img src="img/ods12.png" alt="ODS 12" class="ods-img">
+                <p>
+                    Apostamos por un consumo cultural consciente y una gestión eficiente
+                    de los recursos.
+                </p>
+
+                <button class="ods-toggle">Ver acciones concretas</button>
+                <div class="ods-extra hidden">
+                    <p>
+                        Uso responsable de energía, reducción de residuos y concienciación
+                        medioambiental a través del cine.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="ods-form-section">
+            <h2>¿Qué ODS representa más tus valores?</h2>
+
+            <form id="odsForm">
+                <label>
+                    <input type="radio" name="ods" value="ODS 10">
+                    ODS 10 · Reducción de las desigualdades
+                </label>
+
+                <label>
+                    <input type="radio" name="ods" value="ODS 11">
+                    ODS 11 · Ciudades sostenibles
+                </label>
+
+                <label>
+                    <input type="radio" name="ods" value="ODS 12">
+                    ODS 12 · Consumo responsable
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="respuestaODS"></p>
+
+            <div class="ods-progress hidden" id="odsProgress">
+                <div class="ods-progress-bar" id="odsProgressBar"></div>
+            </div>
+            <p id="odsPorcentaje" class="ods-porcentaje"></p>
+
+        </section>
+
+        <!-- DRAG & DROP -->
+        <section class="ods-drag-section">
+            <h2>Relaciona acciones con el ODS correcto</h2>
+
+            <div class="acciones">
+                <div class="accion" draggable="true" data-correct="ODS 10">Inclusión social</div>
+                <div class="accion" draggable="true" data-correct="ODS 12">Consumo responsable</div>
+                <div class="accion" draggable="true" data-correct="ODS 11">Espacios culturales</div>
+            </div>
+
+            <div class="ods-dropzones">
+                <div class="ods-drop" data-ods="ODS 10">ODS 10</div>
+                <div class="ods-drop" data-ods="ODS 11">ODS 11</div>
+                <div class="ods-drop" data-ods="ODS 12">ODS 12</div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-contact">
+                <h3>CONTÁCTANOS</h3>
+                <p><strong>Móvil:</strong> 621 34 56 78</p>
+                <p><strong>Correo electrónico:</strong> info@cineslumiere.com</p>
+                <p><strong>Dirección:</strong> Camí de Vera, s/n, Algirós, 46022 València</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Copyright 2025 <strong>CINES LUMIERE SL</strong> • Todos los derechos reservados.</p>
+                <p>
+                    <a href="info.html">Aviso legal</a> •
+                    <a href="info.html">Política de privacidad</a> •
+                    <a href="info.html">Política de cookies</a> •
+                    <a href="info.html">Accesibilidad</a>
+                </p>
+
+                <div class="footer-logos">
+                    <img src="img/upv-logo.png" alt="Universitat Politècnica de València">
+                    <img src="img/gtdm-logo.png" alt="Grado en Tecnología Digital y Multimedia">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/ods.js"></script>
+    
+</body>
+</html>
