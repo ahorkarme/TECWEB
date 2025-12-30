@@ -61,52 +61,174 @@
     </nav>
 
 
-    <!-- Contenido principal -->
-    <main>
-        <section>
-            <h1 align="center">Nuestra programación: </h1>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="cartelera-page">
 
-            <h2>02 ENERO <i>18:00 h</i></h2>
-            <img class="derecha"
-                    src="img/img-ods7-1.png"
-                    alt="Energía"
-                    title="Energía"
-                    width="200"
-                    height="150">
-            <h2 style="color: #7C0E36;">PORCO ROSSO</h2>
-            <p><i><b>Hayao Miyazaki</b> · Japón · 1992 · DOBLADA CAST. · Color · 94' · DCP</i></p><br>
+    <!-- INTRO -->
+    <section class="cartelera-intro">
+        <h1>Cartelera</h1>
+        <p>Descubre las películas en exhibición y reserva tu entrada.</p>
+    </section>
 
-            <h2>02 ENERO <i>18:00 h</i></h2>
-            <img class="derecha"
-                    src="img/img-ods7-1.png"
-                    alt="Energía"
-                    title="Energía"
-                    width="200"
-                    height="150">
-            <h2 style="color: #7C0E36;">PORCO ROSSO</h2>
-            <p><i><b>Hayao Miyazaki</b> · Japón · 1992 · DOBLADA CAST. · Color · 94' · DCP</i></p><br>
-            
-            <h2>02 ENERO <i>18:00 h</i></h2>
-            <img class="derecha"
-                    src="img/img-ods7-1.png"
-                    alt="Energía"
-                    title="Energía"
-                    width="200"
-                    height="150">
-            <h2 style="color: #7C0E36;">PORCO ROSSO</h2>
-            <p><i><b>Hayao Miyazaki</b> · Japón · 1992 · DOBLADA CAST. · Color · 94' · DCP</i></p><br>
-            
-            <h2>02 ENERO <i>18:00 h</i></h2>
-            <img class="derecha"
-                    src="img/img-ods7-1.png"
-                    alt="Energía"
-                    title="Energía"
-                    width="200"
-                    height="150">
-            <h2 style="color: #7C0E36;">PORCO ROSSO</h2>
-            <p><i><b>Hayao Miyazaki</b> · Japón · 1992 · DOBLADA CAST. · Color · 94' · DCP</i></p><br>
-        </section>
+    <!-- FILTROS -->
+    <section class="cartelera-filtros">
+        <h2>Filtrar películas</h2>
+
+        <div class="filtros-container">
+            <!-- GÉNERO -->
+            <select id="filtroGenero">
+                <option value="all">Todos los géneros</option>
+                <option value="drama">Drama</option>
+                <option value="thriller">Thriller</option>
+                <option value="fantasia">Fantasía</option>
+                <option value="comedia">Comedia</option>
+                <option value="terror">Terror</option>
+                <option value="terror">Romance</option>
+                <option value="terror">Sci-Fi</option>
+
+            </select>
+
+            <!-- DURACIÓN -->
+            <select id="filtroDuracion">
+                <option value="all">Todas las duraciones</option>
+                <option value="corta">Menos de 100 min</option>
+                <option value="media">100 – 120 min</option>
+                <option value="larga">Más de 120 min</option>
+            </select>
+
+            <!-- BUSCADOR -->
+            <input
+                type="text"
+                id="buscadorPeliculas"
+                placeholder="Buscar película..."
+            />
+        </div>
+    </section>
+
+    <!-- LISTA -->
+    <section class="cartelera-lista" id="carteleraLista">
+
+        <!-- Película 1 -->
+        <article class="pelicula-row" data-genero="thriller" data-duracion="93">
+            <img src="img/the-night-of-the-hunter.jpg" alt="The Night of the Hunter">
+            <div class="peli-info">
+                <h3>The Night of the Hunter</h3>
+                <p>Thriller · 93 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un clásico del cine expresionista americano.
+                </div>
+            </div>
+        </article>
+
+        <!-- Película 2 -->
+        <article class="pelicula-row" data-genero="drama" data-duracion="142">
+            <img src="img/the-great-beauty.jpg" alt="The Great Beauty">
+            <div class="peli-info">
+                <h3>The Great Beauty</h3>
+                <p>Drama · 142 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un viaje existencial por Roma.
+                </div>
+            </div>
+        </article>
+
+        <!-- Película 3 -->
+        <article class="pelicula-row" data-genero="romance" data-duracion="118">
+            <img src="img/parthenope.jpg" alt="Parthenope">
+            <div class="peli-info">
+                <h3>Parthenope</h3>
+                <p>Romance · 118 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Deseo, memoria e identidad.
+                </div>
+            </div>
+        </article>
+
+        <!-- Película 4 -->
+        <article class="pelicula-row" data-genero="terror" data-duracion="98">
+            <img src="img/frankenstein.jpg" alt="Frankenstein">
+            <div class="peli-info">
+                <h3>Frankenstein</h3>
+                <p>Terror · 98 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una reflexión sobre la humanidad.
+                </div>
+            </div>
+        </article>
+
+        <!-- Película 5 -->
+        <article class="pelicula-row" data-genero="comedia" data-duracion="104">
+            <img src="img/comedia.jpg" alt="Comedia">
+            <div class="peli-info">
+                <h3>Película de Comedia</h3>
+                <p>Comedia · 104 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Humor fresco y actual.
+                </div>
+            </div>
+        </article>
+
+        <!-- Película 6 -->
+        <article class="pelicula-row" data-genero="ciencia" data-duracion="126">
+            <img src="img/scifi.jpg" alt="Ciencia ficción">
+            <div class="peli-info">
+                <h3>Ciencia Ficción</h3>
+                <p>Ciencia ficción · 126 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Tecnología y reflexión social.
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+
+    <!-- FORMULARIO -->
+    <section class="cartelera-form">
+        <h2>Comprar entradas</h2>
+
+        <form id="formCartelera">
+        <label>
+            Película:
+            <select id="selectPelicula" required>
+            <option value="">Selecciona una película</option>
+            <option>The Night of the Hunter</option>
+            <option>The Great Beauty</option>
+            <option>Parthenope</option>
+            <option>Frankenstein</option>
+            <option>Pelicula 5</option>
+            <option>Pelicula 6</option>
+            </select>
+        </label>
+
+        <label>
+            Horario:
+            <select id="selectHorario" required>
+            <option value="">Selecciona un horario</option>
+            <option>16:00</option>
+            <option>18:00</option>
+            <option>20:00</option>
+            </select>
+        </label>
+
+        <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- POPUP -->
+    <div class="popup hidden" id="popupConfirmacion">
+        <p>🎟️ Entradas enviadas a tu correo</p>
+        <button id="cerrarPopup">Aceptar</button>
+    </div>
+
     </main>
+
 
     <!-- Footer -->
     <footer class="footer">
