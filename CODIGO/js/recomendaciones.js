@@ -1,3 +1,37 @@
+/* CAMBIO DE SECCIONES RECO */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const buttons = document.querySelectorAll(".reco-btn");
+    const sections = document.querySelectorAll(".reco-section");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+
+            // 🔥 ACI ESTAVA L’ERROR
+            const target = button.dataset.section;
+
+            const targetSection = document.querySelector(
+                `.reco-section.${target}`
+            );
+
+            if (!targetSection) {
+                console.error("No existe la sección:", target);
+                return;
+            }
+
+            // Desactivar tots
+            buttons.forEach(btn => btn.classList.remove("active"));
+            sections.forEach(sec => sec.classList.remove("active"));
+
+            // Activar actual
+            button.classList.add("active");
+            targetSection.classList.add("active");
+        });
+    });
+
+});
+
 /*    RATÓN    */
 
 document.addEventListener("mousemove", (e) => {
