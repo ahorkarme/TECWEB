@@ -226,6 +226,7 @@ body {
     height: 180px;
     border: none;
     border-radius: 8px;
+    filter: none;
 }
 
 /* CINE CLÁSICO */
@@ -258,7 +259,7 @@ body {
 }
 
 .reco-section.clasicos .reco-trailer iframe {
-    filter: grayscale(100%);
+    filter: none;
 }
 
 /* CINE DE PROXIMIDAD */
@@ -292,6 +293,7 @@ body {
 
 .reco-section.proximidad .reco-trailer iframe {
     border: 2px solid #F8C94D;
+    filter: none;
 }
 
 /* CINE EMOCIONAL */
