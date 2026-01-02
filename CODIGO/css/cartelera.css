@@ -25,26 +25,24 @@
   margin: 0 5px; 
 }
 
-/* Menú */
-ul {
-  list-style-type: none;
+/* MENÚ */
+.main-nav .menu-list {
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #3E0138;
-  position: auto;
-  top: 0;
-  left: 0;
   width: 100%;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-li.menu {
+.main-nav .menu {
   float: left;
 }
 
-li a,
-.dropbtn {
+/* Enlaces principales */
+.main-nav li a,
+.main-nav .dropbtn {
   display: inline-block;
   color: #F8C94D;
   text-align: center;
@@ -53,25 +51,29 @@ li a,
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-li a:hover,
-.dropdown:hover .dropbtn {
+/* Hover */
+.main-nav li a:hover,
+.main-nav .dropdown:hover .dropbtn {
   background-color: #7C0E36;
 }
 
-li.dropdown {
+/* Dropdown */
+.main-nav .dropdown {
+  position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.main-nav .dropdown-content {
   display: none;
   position: absolute;
   background-color: #F8C94D;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
 }
 
-.dropdown-content a {
+/* Enlaces dropdown */
+.main-nav .dropdown-content a {
   color: #3E0138;
   padding: 12px 16px;
   text-decoration: none;
@@ -80,11 +82,12 @@ li.dropdown {
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-.dropdown-content a:hover {
+.main-nav .dropdown-content a:hover {
   background-color: #D98139;
 }
 
-.dropdown:hover .dropdown-content {
+/* Mostrar dropdown */
+.main-nav .dropdown:hover .dropdown-content {
   display: block;
 }
 

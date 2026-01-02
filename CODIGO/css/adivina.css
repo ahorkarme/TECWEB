@@ -25,26 +25,25 @@
   margin: 0 5px; 
 }
 
-/* Menú */
-ul {
-  list-style-type: none;
+/* MENÚ */
+
+.main-nav .menu-list {
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #3E0138;
-  position: auto;
-  top: 0;
-  left: 0;
   width: 100%;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-li.menu {
+.main-nav .menu {
   float: left;
 }
 
-li a,
-.dropbtn {
+/* Enlaces principales */
+.main-nav li a,
+.main-nav .dropbtn {
   display: inline-block;
   color: #F8C94D;
   text-align: center;
@@ -53,25 +52,29 @@ li a,
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-li a:hover,
-.dropdown:hover .dropbtn {
+/* Hover */
+.main-nav li a:hover,
+.main-nav .dropdown:hover .dropbtn {
   background-color: #7C0E36;
 }
 
-li.dropdown {
+/* Dropdown */
+.main-nav .dropdown {
+  position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.main-nav .dropdown-content {
   display: none;
   position: absolute;
   background-color: #F8C94D;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
 }
 
-.dropdown-content a {
+/* Enlaces dropdown */
+.main-nav .dropdown-content a {
   color: #3E0138;
   padding: 12px 16px;
   text-decoration: none;
@@ -80,106 +83,17 @@ li.dropdown {
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-.dropdown-content a:hover {
+.main-nav .dropdown-content a:hover {
   background-color: #D98139;
 }
 
-.dropdown:hover .dropdown-content {
+/* Mostrar dropdown */
+.main-nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* Body */
-body {
-  background-color: #FFF6E5;
-  margin: 0;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-}
 
-/* Margen al texto */
-p, h1, h2, h3 {
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: justify;
-}
-
-/* Títulos */
-h1 {
-    color: #1e4f6e;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Brush Script MT', cursive;
-    margin-top: 50px;
-}
-
-h2 {
-    color: #2973a1;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Brush Script MT', cursive;
-    margin-top: 10px;
-}
-
-h3 {
-    font-family: Calisto MT, cursive;
-    font-size: 25px;
-    color:#2d81b5;
-    margin-top: 20px;
-}
-
-p {
-    color: #38436c;
-    font-family:Calisto MT;
-    font-size: 17px;
-    margin: 3% 8% 0% 8%;
-    text-align: justify;
-    }
-
-/* Estilo para listas */
-li.pagina{
-    color: #38436c;
-    font-family:Calisto MT;
-    font-size: 17px;
-    text-align: justify;
-    margin: 3% 8% 0% 8%;
-}
-/* Estilo para imagen */
-img.derecha {
-    float: right;
-    margin:1% 3% 30% 1%; 
-    border:#5f9ea0 5px solid;
-    padding: 0.5%;
-  }
-
-img.izquierda {
-    float: left;
-    margin:1% 0% 0% 8%; 
-    padding: 0.5%;
-  }
-/* Minijuego */
-.juego{
-  text-align: center;
-}
-
-#contenedor-juego {
-  width: 600px;
-  height: 325px;
-  border: 5px solid #104160;
-  margin: 20px auto;
-  background-image: url('img/img-ods14-fondomarino.png');
-  background-size: cover;
-  position: relative;
-}
-
-canvas {
-    display: block;
-}
-.basura {
-    position: absolute;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
-}
 
 /* Footer */
 .footer {
