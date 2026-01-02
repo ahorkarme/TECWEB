@@ -82,8 +82,9 @@
                 <option value="fantasia">Fantasía</option>
                 <option value="comedia">Comedia</option>
                 <option value="terror">Terror</option>
-                <option value="terror">Romance</option>
-                <option value="terror">Sci-Fi</option>
+                <option value="romance">Romance</option>
+                <option value="scifi">Sci-Fi</option>
+                <option value="musical">Musical</option>
 
             </select>
 
@@ -104,49 +105,8 @@
         </div>
     </section>
 
-    <!-- LISTA -->
+    <!-- PELÍCULAS DISPONIBLES -->
     <section class="cartelera-lista" id="carteleraLista">
-
-        <!-- Película 1 -->
-        <article class="pelicula-row" data-genero="thriller" data-duracion="93">
-            <img src="img/the-night-of-the-hunter.jpg" alt="The Night of the Hunter">
-            <div class="peli-info">
-                <h3>The Night of the Hunter</h3>
-                <p>Thriller · 93 min</p>
-                <button class="ver-mas">Ver detalles</button>
-                <div class="pelicula-extra hidden">
-                    Un clásico del cine expresionista americano.
-                </div>
-            </div>
-        </article>
-
-        <!-- Película 2 -->
-        <article class="pelicula-row" data-genero="drama" data-duracion="142">
-            <img src="img/the-great-beauty.jpg" alt="The Great Beauty">
-            <div class="peli-info">
-                <h3>The Great Beauty</h3>
-                <p>Drama · 142 min</p>
-                <button class="ver-mas">Ver detalles</button>
-                <div class="pelicula-extra hidden">
-                    Un viaje existencial por Roma.
-                </div>
-            </div>
-        </article>
-
-        <!-- Película 3 -->
-        <article class="pelicula-row" data-genero="romance" data-duracion="118">
-            <img src="img/parthenope.jpg" alt="Parthenope">
-            <div class="peli-info">
-                <h3>Parthenope</h3>
-                <p>Romance · 118 min</p>
-                <button class="ver-mas">Ver detalles</button>
-                <div class="pelicula-extra hidden">
-                    Deseo, memoria e identidad.
-                </div>
-            </div>
-        </article>
-
-        <!-- Película 4 -->
         <article class="pelicula-row" data-genero="terror" data-duracion="98">
             <img src="img/frankenstein.jpg" alt="Frankenstein">
             <div class="peli-info">
@@ -154,39 +114,433 @@
                 <p>Terror · 98 min</p>
                 <button class="ver-mas">Ver detalles</button>
                 <div class="pelicula-extra hidden">
-                    Una reflexión sobre la humanidad.
+                    Una reinterpretación del mito clásico que profundiza en la soledad,
+                    el rechazo y la responsabilidad del creador frente a su creación,
+                    combinando terror gótico con una fuerte carga emocional.<br><br>
+                    <strong>Dirección:</strong> Guillermo del Toro<br>
+                    <strong>Año:</strong> 2025
                 </div>
             </div>
         </article>
 
-        <!-- Película 5 -->
-        <article class="pelicula-row" data-genero="comedia" data-duracion="104">
-            <img src="img/comedia.jpg" alt="Comedia">
+        <article class="pelicula-row" data-genero="romance" data-duracion="128">
+            <img src="img/dracula-a-love-tale.jpg" alt="Drácula: una historia de amor">
             <div class="peli-info">
-                <h3>Película de Comedia</h3>
-                <p>Comedia · 104 min</p>
+                <h3>Drácula: una historia de amor</h3>
+                <p>Romance · 128 min</p>
                 <button class="ver-mas">Ver detalles</button>
                 <div class="pelicula-extra hidden">
-                    Humor fresco y actual.
+                    Una reinterpretación romántica del mito de Drácula que pone el foco en
+                    el amor eterno, la pérdida y el sacrificio, combinando elementos góticos
+                    con una narrativa emocional y trágica.<br><br>
+                    <strong>Dirección:</strong> Luc Besson<br>
+                    <strong>Año:</strong> 2025
                 </div>
             </div>
         </article>
 
-        <!-- Película 6 -->
-        <article class="pelicula-row" data-genero="ciencia" data-duracion="126">
-            <img src="img/scifi.jpg" alt="Ciencia ficción">
+        <article class="pelicula-row" data-genero="romance" data-duracion="118">
+            <img src="img/parthenope.jpg" alt="Parthenope">
             <div class="peli-info">
-                <h3>Ciencia Ficción</h3>
-                <p>Ciencia ficción · 126 min</p>
+                <h3>Parthenope</h3>
+                <p>Romance · 118 min</p>
                 <button class="ver-mas">Ver detalles</button>
                 <div class="pelicula-extra hidden">
-                    Tecnología y reflexión social.
+                    Una historia íntima ambientada en Nápoles que explora el deseo, la identidad
+                    y la memoria emocional a lo largo del crecimiento de su protagonista,
+                    con una narrativa poética y contemplativa.<br><br>
+                    <strong>Dirección:</strong> Paolo Sorrentino<br>
+                    <strong>Año:</strong> 2024
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="terror" data-duracion="141">
+            <img src="img/the-substance.jpg" alt="La sustancia">
+            <div class="peli-info">
+                <h3>La sustancia</h3>
+                <p>Terror · 141 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una perturbadora sátira de terror corporal que explora la obsesión por
+                    la juventud, la belleza y la identidad, a través de una experiencia
+                    extrema que lleva el cuerpo humano más allá de sus límites físicos
+                    y morales.<br><br>
+                    <strong>Dirección:</strong> Coralie Fargeat<br>
+                    <strong>Año:</strong> 2024
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="musical" data-duracion="160">
+            <img src="img/wicked.jpg" alt="Wicked">
+            <div class="peli-info">
+                <h3>Wicked</h3>
+                <p>Musical · 160 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una reinterpretación del universo de Oz que narra la compleja amistad
+                    entre dos brujas, abordando temas como la identidad, el poder y la
+                    construcción de los mitos.<br><br>
+                    <strong>Dirección:</strong> Jon M. Chu<br>
+                    <strong>Año:</strong> 2024
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="drama" data-duracion="164">
+            <img src="img/kinds-of-kindness.jpg" alt="Kind of Kindness">
+            <div class="peli-info">
+                <h3>Kinds of Kindness</h3>
+                <p>Drama · 164 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un relato contemporáneo dividido en varias historias que exploran
+                    las relaciones humanas, el poder y la dependencia emocional,
+                    con un tono provocador y experimental.<br><br>
+                    <strong>Dirección:</strong> Yorgos Lanthimos<br>
+                    <strong>Año:</strong> 2024
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="comedia" data-duracion="99">
+            <img src="img/gran-hotel-budapest.jpg" alt="El gran hotel Budapest">
+            <div class="peli-info">
+                <h3>El gran hotel Budapest</h3>
+                <p>Comedia · 99 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una aventura llena de humor y estética cuidada que sigue las peripecias
+                    de un excéntrico conserje y su aprendiz en una Europa ficticia,
+                    marcada por el absurdo y la nostalgia.<br><br>
+                    <strong>Dirección:</strong> Wes Anderson<br>
+                    <strong>Año:</strong> 2014
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="drama" data-duracion="142">
+            <img src="img/the-great-beauty.jpg" alt="La gran belleza">
+            <div class="peli-info">
+                <h3>La gran belleza</h3>
+                <p>Drama · 142 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un viaje introspectivo por la alta sociedad romana que reflexiona sobre
+                    el vacío existencial, el paso del tiempo y la búsqueda del sentido de la vida,
+                    a través de una puesta en escena visualmente deslumbrante.<br><br>
+                    <strong>Dirección:</strong> Paolo Sorrentino<br>
+                    <strong>Año:</strong> 2013
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="terror" data-duracion="110">
+            <img src="img/sinister.jpg" alt="Sinister">
+            <div class="peli-info">
+                <h3>Sinister</h3>
+                <p>Terror · 110 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un escritor descubre una serie de inquietantes grabaciones caseras que
+                    revelan una presencia sobrenatural, desencadenando una espiral de horror
+                    psicológico y tensión constante.<br><br>
+                    <strong>Dirección:</strong> Scott Derrickson<br>
+                    <strong>Año:</strong> 2012
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="fantasia" data-duracion="118">
+            <img src="img/laberinto-del-fauno.jpg" alt="El laberinto del fauno">
+            <div class="peli-info">
+                <h3>El laberinto del fauno</h3>
+                <p>Fantasía · 118 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una fábula oscura ambientada en la posguerra española que mezcla
+                    fantasía y realidad para explorar la violencia, la resistencia
+                    y la imaginación como vía de escape.<br><br>
+                    <strong>Dirección:</strong> Guillermo del Toro<br>
+                    <strong>Año:</strong> 2006
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="romance" data-duracion="127">
+            <img src="img/orgullo-y-prejuicio.jpg" alt="Orgullo y prejuicio">
+            <div class="peli-info">
+                <h3>Orgullo y prejuicio</h3>
+                <p>Romance · 127 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Ambientada en la Inglaterra del siglo XIX, la película explora las
+                    convenciones sociales, el amor y los malentendidos entre dos personajes
+                    marcados por el orgullo y los prejuicios de su época.<br><br>
+                    <strong>Dirección:</strong> Joe Wright<br>
+                    <strong>Año:</strong> 2005
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="thriller" data-duracion="108">
+            <img src="img/the-village.jpg" alt="El bosque">
+            <div class="peli-info">
+                <h3>El bosque</h3>
+                <p>Thriller · 108 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una comunidad aislada vive bajo el temor de misteriosas criaturas que
+                    habitan el bosque cercano, en una historia que reflexiona sobre el miedo,
+                    la manipulación y la verdad.<br><br>
+                    <strong>Dirección:</strong> M. Night Shyamalan<br>
+                    <strong>Año:</strong> 2004
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="romance" data-duracion="123">
+            <img src="img/el-diario-de-noa.jpg" alt="El diario de Noah">
+            <div class="peli-info">
+                <h3>El diario de Noah</h3>
+                <p>Romance · 123 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una emotiva historia de amor marcada por el paso del tiempo y la memoria,
+                    que narra la relación entre dos personas unidas por un sentimiento profundo
+                    y persistente a lo largo de los años.<br><br>
+                    <strong>Dirección:</strong> Nick Cassavetes<br>
+                    <strong>Año:</strong> 2004
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="musical" data-duracion="113">
+            <img src="img/chicago.jpg" alt="Chicago">
+            <div class="peli-info">
+                <h3>Chicago</h3>
+                <p>Musical · 113 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un musical vibrante ambientado en los años veinte que combina crimen,
+                    fama y espectáculo, criticando la manipulación mediática a través de
+                    números musicales llenos de energía y sátira.<br><br>
+                    <strong>Dirección:</strong> Rob Marshall<br>
+                    <strong>Año:</strong> 2002
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="comedia" data-duracion="85">
+            <img src="img/ali-g.jpg" alt="Ali G anda suelto">
+            <div class="peli-info">
+                <h3>Ali G anda suelto</h3>
+                <p>Comedia · 85 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una sátira irreverente que parodia la política, la cultura popular y los
+                    medios de comunicación a través de un personaje exagerado y provocador,
+                    característico del humor absurdo.<br><br>
+                    <strong>Dirección:</strong> Mark Mylod<br>
+                    <strong>Año:</strong> 2002
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="romance" data-duracion="122">
+            <img src="img/amelie.jpg" alt="Amélie">
+            <div class="peli-info">
+                <h3>Amélie</h3>
+                <p>Romance · 122 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una joven parisina decide cambiar la vida de quienes la rodean a través de
+                    pequeños gestos de bondad, mientras descubre el amor y su propia identidad
+                    en un mundo lleno de fantasía y sensibilidad.<br><br>
+                    <strong>Dirección:</strong> Jean-Pierre Jeunet<br>
+                    <strong>Año:</strong> 2001
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="scifi" data-duracion="113">
+            <img src="img/donnie-darko.jpg" alt="Donnie Darko">
+            <div class="peli-info">
+                <h3>Donnie Darko</h3>
+                <p>Sci-Fi · 113 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un inquietante relato psicológico que combina ciencia ficción y drama
+                    adolescente, explorando conceptos como el destino, el tiempo y la
+                    fragilidad de la mente humana.<br><br>
+                    <strong>Dirección:</strong> Richard Kelly<br>
+                    <strong>Año:</strong> 2001
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="thriller" data-duracion="127">
+            <img src="img/seven.jpg" alt="Seven">
+            <div class="peli-info">
+                <h3>Seven</h3>
+                <p>Thriller · 127 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Dos detectives persiguen a un asesino en serie que utiliza los siete pecados
+                    capitales como base de sus crímenes, en un relato oscuro sobre la moral,
+                    la culpa y la desesperanza humana.<br><br>
+                    <strong>Dirección:</strong> David Fincher<br>
+                    <strong>Año:</strong> 1995
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="fantasia" data-duracion="76">
+            <img src="img/pesadilla-antes-de-navidad.jpg" alt="Pesadilla antes de Navidad">
+            <div class="peli-info">
+                <h3>Pesadilla antes de Navidad</h3>
+                <p>Fantasía · 76 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un cuento animado que combina fantasía y musical para narrar la
+                    crisis existencial de Jack Skellington, explorando la identidad,
+                    la creatividad y la aceptación de uno mismo.<br><br>
+                    <strong>Dirección:</strong> Henry Selick<br>
+                    <strong>Año:</strong> 1993
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="fantasia" data-duracion="86">
+            <img src="img/totoro.jpg" alt="Mi vecino Totoro">
+            <div class="peli-info">
+                <h3>Mi vecino Totoro</h3>
+                <p>Fantasía · 86 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una delicada historia animada que celebra la infancia, la naturaleza
+                    y la imaginación a través del encuentro de dos niñas con criaturas
+                    mágicas en el Japón rural.<br><br>
+                    <strong>Dirección:</strong> Hayao Miyazaki<br>
+                    <strong>Año:</strong> 1988
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="scifi" data-duracion="117">
+            <img src="img/blade-runner.jpg" alt="Blade Runner">
+            <div class="peli-info">
+                <h3>Blade Runner</h3>
+                <p>Sci-Fi · 117 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    En un futuro distópico, un cazador de replicantes se enfrenta a cuestiones
+                    éticas sobre la identidad, la memoria y lo que significa ser humano,
+                    en una obra fundamental de la ciencia ficción.<br><br>
+                    <strong>Dirección:</strong> Ridley Scott<br>
+                    <strong>Año:</strong> 1982
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="comedia" data-duracion="93">
+            <img src="img/el-guateque.jpg" alt="El guateque">
+            <div class="peli-info">
+                <h3>El guateque</h3>
+                <p>Comedia · 93 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Una comedia clásica basada en el humor físico y la improvisación,
+                    protagonizada por un personaje torpe que desencadena el caos
+                    en una sofisticada fiesta de Hollywood.<br><br>
+                    <strong>Dirección:</strong> Blake Edwards<br>
+                    <strong>Año:</strong> 1968
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="drama" data-duracion="108">
+            <img src="img/adivina-quien-viene-a-cenar.jpg" alt="Adivina quién viene a cenar hoy">
+            <div class="peli-info">
+                <h3>Adivina quién viene a cenar hoy</h3>
+                <p>Drama · 108 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un drama social que aborda el racismo y los prejuicios a través de una
+                    cena familiar inesperada, planteando un debate valiente sobre la
+                    tolerancia y el cambio social.<br><br>
+                    <strong>Dirección:</strong> Stanley Kramer<br>
+                    <strong>Año:</strong> 1967
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="drama" data-duracion="105">
+            <img src="img/rebelion-en-las-aulas.jpg" alt="Rebelión en las aulas">
+            <div class="peli-info">
+                <h3>Rebelión en las aulas</h3>
+                <p>Drama · 105 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un profesor se enfrenta a un grupo de estudiantes conflictivos,
+                    utilizando la educación como herramienta de cambio y superación
+                    en un entorno marcado por la desigualdad social.<br><br>
+                    <strong>Dirección:</strong> James Clavell<br>
+                    <strong>Año:</strong> 1967
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="drama" data-duracion="129">
+            <img src="img/matar-a-un-ruisenor.jpg" alt="Matar a un ruiseñor">
+            <div class="peli-info">
+                <h3>Matar a un ruiseñor</h3>
+                <p>Drama · 129 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un poderoso alegato contra el racismo y la injusticia social, contado desde
+                    la mirada infantil en el sur de Estados Unidos, que defiende la empatía y
+                    la integridad moral frente al prejuicio.<br><br>
+                    <strong>Dirección:</strong> Robert Mulligan<br>
+                    <strong>Año:</strong> 1962
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="thriller" data-duracion="93">
+            <img src="img/the-night-of-the-hunter.jpg" alt="La noche del cazador">
+            <div class="peli-info">
+                <h3>La noche del cazador</h3>
+                <p>Thriller · 93 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un inquietante relato sobre la lucha entre el bien y el mal, narrado desde
+                    la mirada de dos niños perseguidos por un falso predicador. Una obra única
+                    por su atmósfera expresionista y su simbolismo visual.<br><br>
+                    <strong>Dirección:</strong> Charles Laughton<br>
+                    <strong>Año:</strong> 1955
+                </div>
+            </div>
+        </article>
+
+        <article class="pelicula-row" data-genero="terror" data-duracion="94">
+            <img src="img/nosferatu.jpg" alt="Nosferatu">
+            <div class="peli-info">
+                <h3>Nosferatu</h3>
+                <p>Terror · 94 min</p>
+                <button class="ver-mas">Ver detalles</button>
+                <div class="pelicula-extra hidden">
+                    Un clásico del cine expresionista alemán que presenta una inquietante
+                    visión del vampirismo, el miedo y la muerte, utilizando la imagen y
+                    la atmósfera como principales herramientas narrativas.<br><br>
+                    <strong>Dirección:</strong> F. W. Murnau<br>
+                    <strong>Año:</strong> 1922
                 </div>
             </div>
         </article>
 
     </section>
-
 
     <!-- FORMULARIO -->
     <section class="cartelera-form">
@@ -197,12 +551,35 @@
             Película:
             <select id="selectPelicula" required>
             <option value="">Selecciona una película</option>
-            <option>The Night of the Hunter</option>
-            <option>The Great Beauty</option>
-            <option>Parthenope</option>
             <option>Frankenstein</option>
-            <option>Pelicula 5</option>
-            <option>Pelicula 6</option>
+            <option>Drácula: una historia de amor</option>
+            <option>Parthenope</option>
+            <option>La sustancia</option>
+            <option>Wicked</option>
+            <option>Kind of Kindness</option>
+            <option>Pobres criaturas</option>
+            <option>El gran hotel Budapest</option>
+            <option>La gran belleza</option>
+            <option>Sinister</option>
+            <option>El laberinto del fauno</option>
+            <option>Orgullo y prejuicio</option>
+            <option>El bosque</option>
+            <option>El diario de Noah</option>
+            <option>Chicago</option>
+            <option>Ali G anda suelto</option>
+            <option>Amélie</option>
+            <option>Donnie Darko</option>
+            <option>Moulin Rouge</option>
+            <option>Seven</option>
+            <option>Pesadilla antes de Navidad</option>
+            <option>Mi vecino Totoro</option>
+            <option>Blade Runner</option>
+            <option>El guateque</option>
+            <option>Adivina quién viene a cenar hoy</option>
+            <option>Rebelión en las aulas</option>
+            <option>Matar a un ruiseñor</option>
+            <option>La noche del cazador</option>
+            <option>Nosferatu</option>
             </select>
         </label>
 
