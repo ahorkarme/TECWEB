@@ -30,12 +30,12 @@ const resultado = document.getElementById("resultadoRuleta");
 if (ruleta && botonRuleta && resultado) {
 
     const opciones = [
-        "Drama",
-        "Comedia",
-        "Terror",
-        "Thriller",
-        "Sci-Fi",
-        "Romance"
+        "El diario de Noa 😭",
+        "Ali G 😂",
+        "Sinister 😱",
+        "Seven 💀",
+        "Blade Runner 🚀",
+        "Orgullo y Prejuicio"
     ];
 
     let giroActual = 0;
