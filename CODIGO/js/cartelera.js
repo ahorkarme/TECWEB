@@ -9,8 +9,7 @@ document.querySelectorAll(".ver-mas").forEach(btn => {
   });
 });
 
-
-/*    FILTROS (GÉNERO + DURACIÓN)    */
+/*    FILTROS (GÉNERO + DURACIÓN POR TIEMPO REAL)    */
 const filtroGenero = document.getElementById("filtroGenero");
 const filtroDuracion = document.getElementById("filtroDuracion");
 const peliculas = document.querySelectorAll(".pelicula-row");
@@ -21,19 +20,27 @@ function aplicarFiltros() {
 
   peliculas.forEach(peli => {
     const peliGenero = peli.dataset.genero;
-    const peliDuracion = parseInt(peli.dataset.duracion);
+    const peliDuracion = parseInt(peli.dataset.duracion, 10);
 
     let mostrar = true;
 
-    /* filtro género */
-    if (genero !== "todos" && peliGenero !== genero) {
+    /* FILTRO GÉNERO */
+    if (genero !== "all" && peliGenero !== genero) {
       mostrar = false;
     }
 
-    /* filtro duración */
-    if (duracion === "corta" && peliDuracion >= 100) mostrar = false;
-    if (duracion === "media" && (peliDuracion < 100 || peliDuracion > 120)) mostrar = false;
-    if (duracion === "larga" && peliDuracion <= 120) mostrar = false;
+    /* FILTRO DURACIÓN (MINUTOS REALES) */
+    if (duracion === "corta") {
+      if (peliDuracion > 60) mostrar = false;
+    }
+
+    if (duracion === "media") {
+      if (peliDuracion > 90) mostrar = false;
+    }
+
+    if (duracion === "larga") {
+      if (peliDuracion <= 90) mostrar = false;
+    }
 
     peli.style.display = mostrar ? "flex" : "none";
   });
@@ -43,7 +50,6 @@ if (filtroGenero && filtroDuracion) {
   filtroGenero.addEventListener("change", aplicarFiltros);
   filtroDuracion.addEventListener("change", aplicarFiltros);
 }
-
 
 /*    FORMULARIO ENTRADAS    */
 document.getElementById("formCartelera").addEventListener("submit", e => {
@@ -76,17 +82,16 @@ document.getElementById("formCartelera").addEventListener("submit", e => {
 });
 
 /*    RATÓN    */
-
 document.addEventListener("mousemove", (e) => {
-    const glow = document.createElement("div");
-    glow.classList.add("cursor-glow");
+  const glow = document.createElement("div");
+  glow.classList.add("cursor-glow");
 
-    glow.style.left = `${e.clientX - 6}px`;
-    glow.style.top = `${e.clientY - 6}px`;
+  glow.style.left = `${e.clientX - 6}px`;
+  glow.style.top = `${e.clientY - 6}px`;
 
-    document.body.appendChild(glow);
+  document.body.appendChild(glow);
 
-    setTimeout(() => {
-        glow.remove();
-    }, 800);
+  setTimeout(() => {
+    glow.remove();
+  }, 800);
 });

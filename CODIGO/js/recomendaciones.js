@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.forEach(button => {
         button.addEventListener("click", () => {
 
-            // 🔥 ACI ESTAVA L’ERROR
             const target = button.dataset.section;
 
             const targetSection = document.querySelector(
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // Desactivar tots
+            // Desactivar todos
             buttons.forEach(btn => btn.classList.remove("active"));
             sections.forEach(sec => sec.classList.remove("active"));
 

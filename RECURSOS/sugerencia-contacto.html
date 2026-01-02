@@ -1,0 +1,236 @@
+Contacto.html
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cines Lumiere</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <span>📞 621 34 56 78</span>
+        <a href="mailto:info@cineslumiere.com">✉️ info@cineslumiere.com</a>
+        <div class="social-media">
+            <a href="https://www.instagram.com/lafilmoteca_gvaivc/">
+                <img src="img/header-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/IVCLaFilmotecaValenciana/">
+                <img src="img/header-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@_lafilmoteca">
+                <img src="img/header-tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://ivc.gva.es/val/audiovisual/programacio/valencia-la-filmoteca">
+                <img src="img/header-linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </header>
+
+    <!-- Menú -->
+    <nav class="main-nav">
+        <ul class="menu-list">
+            <li><a href="index.html">INICIO</a></li>
+
+            <li class="dropdown">
+                <a href="#">NUESTRAS ACTIVIDADES</a>
+                <div class="dropdown-content">
+                    <a href="cartelera.html">La Cartelera</a>
+                    <a href="recomendaciones.html">Nuestras Recomendaciones</a>
+                    <a href="adivina.html">Adivina quién viene al cine</a>
+                    <a href="salas.html">Descubre nuestras salas</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
+            </li>
+
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section>
+            <h1>Contacto</h1>
+
+            <form id="formContacto">
+
+                <fieldset>
+                    <legend>Tus datos de contacto</legend>
+
+                    <label for="nom">Nombre:</label><br>
+                    <input type="text" id="nom" name="nombre"
+                           placeholder="Escriba su nombre..." required>
+
+                    <br><br>
+
+                    <label for="correoe">Correo electrónico:</label><br>
+                    <input type="email" id="correoe" name="correo"
+                           placeholder="Escriba su correo electrónico..." required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentarios</legend>
+
+                    <label for="comentario">Qué desea contarnos:</label><br>
+                    <textarea id="comentario" name="comentario"
+                              rows="8" required></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar todo</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>CONTÁCTANOS</h3>
+                <p><strong>Móvil:</strong> 621 34 56 78</p>
+                <p><strong>Correo electrónico:</strong> info@cineslumiere.com</p>
+                <p><strong>Dirección:</strong> Camí de Vera, s/n, Algirós, 46022 València</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contacto.js"></script>
+</body>
+</html>
+
+
+/* BODY */
+body {
+  background-color: #FFF6E5;
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  line-height: 1.6;
+  color: #3E0138;
+}
+
+/* INPUTS Y TEXTAREA */
+input,
+textarea {
+  background-color: #F8C94D;
+  border: 1px solid #D98139;
+  padding: 8px 10px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* FOCUS (accesibilidad) */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7C0E36;
+  box-shadow: 0 0 0 2px rgba(124, 14, 54, 0.2);
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+  color: rgba(62, 1, 56, 0.85);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Calisto MT", Georgia, serif;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/* FIELDSET Y LEGEND */
+fieldset {
+  margin: 3% 8%;
+  padding: 20px;
+  border: 1px solid #D98139;
+}
+
+legend {
+  color: #3E0138;
+  font-family: "Calisto MT", Georgia, serif;
+  font-size: 17px;
+  padding: 0 10px;
+}
+
+/* BOTONES */
+button {
+  background-color: #F8C94D;
+  color: #3E0138;
+  width: 130px;
+  height: 40px;
+  margin: 20px 10px 40px 8%;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #D98139;
+}
+
+
+
+/* FORMULARIO DE CONTACTO */
+const form = document.getElementById("formContacto");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nom").value.trim();
+    const correo = document.getElementById("correoe").value.trim();
+    const comentario = document.getElementById("comentario").value.trim();
+
+    if (!nombre || !correo || !comentario) return;
+
+    const popup = document.createElement("div");
+    popup.textContent = "📩 Mensaje enviado correctamente. Gracias por contactar.";
+    popup.style.position = "fixed";
+    popup.style.bottom = "30px";
+    popup.style.right = "30px";
+    popup.style.background = "#F8C94D";
+    popup.style.color = "#3E0138";
+    popup.style.padding = "15px 25px";
+    popup.style.borderRadius = "30px";
+    popup.style.fontFamily = "Trebuchet MS, Arial, sans-serif";
+    popup.style.boxShadow = "0 6px 15px rgba(0,0,0,0.3)";
+    popup.style.zIndex = "9999";
+
+    document.body.appendChild(popup);
+
+    setTimeout(() => popup.remove(), 3000);
+
+    form.reset();
+});
+
+/* RATÓN */
+document.addEventListener("mousemove", (e) => {
+    const glow = document.createElement("div");
+    glow.classList.add("cursor-glow");
+
+    glow.style.left = `${e.clientX - 6}px`;
+    glow.style.top = `${e.clientY - 6}px`;
+
+    document.body.appendChild(glow);
+
+    setTimeout(() => glow.remove(), 800);
+});

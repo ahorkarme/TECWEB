@@ -1,4 +1,18 @@
-/* Header */
+/* RESET BÁSICO */
+/* Afecta toda la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: #FFF6E5;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* HEADER */
 .header {
   background-color: #7C0E36;
   color: white;
@@ -7,122 +21,99 @@
   justify-content: space-between;
   align-items: center;
   font-family: Georgia, "Times New Roman", serif;
-} 
+}
 
-.header a { 
-  color: #F8C94D; 
+.header a {
+  color: #F8C94D;
   text-decoration: none;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-} 
+}
 
 .header a:hover {
   color: #D98139;
 }
 
-.social-media img { 
-  width: 23px; 
-  height: 23px; 
-  margin: 0 5px; 
+.social-media img {
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
 }
 
-/* MENÚ */
-
-.main-nav .menu-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #3E0138;
+/* MENÚ DE NAVEGACIÓN */
+.main-nav {
   width: 100%;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: #3E0138;
 }
 
-.main-nav .menu {
-  float: left;
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-/* Enlaces principales */
-.main-nav li a,
-.main-nav .dropbtn {
-  display: inline-block;
-  color: #F8C94D;
-  text-align: center;
+.menu-list li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
   padding: 14px 16px;
+  color: #F8C94D;
   text-decoration: none;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  text-align: center;
 }
 
-/* Hover */
-.main-nav li a:hover,
-.main-nav .dropdown:hover .dropbtn {
+.menu-list a:hover {
   background-color: #7C0E36;
 }
 
 /* Dropdown */
-.main-nav .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.main-nav .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #F8C94D;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
 }
 
-/* Enlaces dropdown */
-.main-nav .dropdown-content a {
+.dropdown-content a {
   color: #3E0138;
   padding: 12px 16px;
-  text-decoration: none;
-  display: block;
   text-align: left;
-  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-.main-nav .dropdown-content a:hover {
+.dropdown-content a:hover {
   background-color: #D98139;
 }
 
-/* Mostrar dropdown */
-.main-nav .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Body */
-body {
-  background-color: #FFF6E5;
-  margin: 0;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-}
-
-/* Separador entre secciones */
+/* SEPARADOR */
 .section-divider {
-    width: 100%;
-    height: 50px;
-    background: linear-gradient(
-        to right,
-        transparent,
-        #7C0E36,
-        transparent
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 35px 0;
-    position: relative;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(
+	to right,
+	transparent,
+	#7C0E36, 
+	transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0;
+  position: relative;
 }
 
-/* Carousel */
+/* CARRUSEL */
 .carousel h1 {
   text-align: center;
   font-size: 4rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-weight: bold;
-  color: #5d063d;
+  color: #5D063D;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -131,7 +122,6 @@ body {
   text-align: center;
   font-size: 2.3rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-weight: bold;
   color: #3E0138;
   margin-top: 10px;
   margin-bottom: 15px;
@@ -157,10 +147,10 @@ body {
   position: relative;
 }
 
-.carousel-images img {
+.carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* evita deformacions */
+  object-fit: cover;
 }
 
 .carousel-text {
@@ -168,12 +158,11 @@ body {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(62, 1, 56, 0.75);
+  background: rgba(62,1,56,0.75);
   color: #F8C94D;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1.5rem;
-  font-family: Georgia, "Times New Roman", serif;
 }
 
 .carousel-buttons {
@@ -193,11 +182,10 @@ body {
   padding: 10px;
   border-radius: 50%;
   font-size: 1.5rem;
-  font-family: Georgia, "Times New Roman", serif;
   transition: background 0.3s ease;
 }
 
-/* Presentación */
+/* PRESENTACIÓN */
 .presentacion {
   text-align: center;
   padding: 15px 10px 40px;
@@ -217,7 +205,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .presentacion-item {
@@ -227,24 +215,23 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .presentacion-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .presentacion-item img {
   width: 150px;
   height: 190px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .presentacion-item h3 {
   font-size: 1.5rem;
-  font-family: Georgia, "Times New Roman", serif;
   color: #7C0E36;
   margin-bottom: 10px;
 }
@@ -258,7 +245,7 @@ body {
 
 .presentacion-item a {
   font-size: 1rem;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
   color: #BA4228;
   text-decoration: none;
   font-weight: bold;
@@ -269,12 +256,120 @@ body {
   color: #9B1926;
 }
 
-/* Conócenos */
+/* RULETA */
+.ruleta-section {
+  background-color: #FFF6E5;
+  padding: 60px 20px;
+}
+
+.ruleta-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Texto */
+.ruleta-text {
+    max-width: 420px;
+}
+
+.ruleta-text h2 {
+    font-size: 2.4rem;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3E0138;
+    margin: 0 0 15px;
+}
+
+.ruleta-text p {
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la ruleta */
+.ruleta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Círculo */
+.ruleta {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 8px solid #7C0E36;
+    background: conic-gradient(
+        #F8C94D 0deg 60deg,
+        #D98139 60deg 120deg,
+        #BA4228 120deg 180deg,
+        #9B1926 180deg 240deg,
+        #5D063D 240deg 300deg,
+        #3E0138 300deg 360deg
+    );
+    position: relative;
+    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* Span */
+.ruleta span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.3rem;
+    pointer-events: none;
+}
+
+/* Posición correcta dentro del círculo */
+.ruleta span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(30deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(90deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(150deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(210deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(270deg) translateY(-120px);
+}
+
+.ruleta span:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(330deg) translateY(-120px);
+}
+
+/* Botón */
+.ruleta-button {
+    background-color: #7C0E36;
+    color: #F8C94D;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.ruleta-result {
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #7C0E36;
+}
+
+/* CONÓCENOS */
 .conoce-section {
   background: linear-gradient(
-    rgba(62,1,56,0.85),
-    rgba(62,1,56,0.85)
-  ), url('img/partner-bg.jpg') no-repeat center center/cover;
+	rgba(62,1,56,0.85), 
+	rgba(62,1,56,0.85)),
+        url("img/partner-bg.jpg") center/cover;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -314,115 +409,7 @@ body {
   color: #3E0138;
 }
 
-/* Ruleta */
-.ruleta-section {
-    background-color: #FFF6E5;
-    padding: 40px 20px 60px;
-}
-
-.ruleta-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-}
-
-/* Text */
-.ruleta-text {
-    max-width: 420px;
-}
-
-.ruleta-text h2 {
-    font-size: 2.4rem;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #3E0138;
-    margin: 0 0 15px;
-}
-
-.ruleta-text p {
-    margin-bottom: 20px;
-}
-
-/* Contenidor ruleta */
-.ruleta-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Cercle */
-.ruleta {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    border: 8px solid #7C0E36;
-    background: conic-gradient(
-        #F8C94D 0deg 60deg,
-        #D98139 60deg 120deg,
-        #BA4228 120deg 180deg,
-        #9B1926 180deg 240deg,
-        #5D063D 240deg 300deg,
-        #3E0138 300deg 360deg
-    );
-    position: relative;
-    transition: transform 4s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-/* Span */
-.ruleta span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 1.3rem;
-    pointer-events: none;
-}
-
-/* Posició correcta dins del cercle */
-.ruleta span:nth-child(1) {
-    transform: translate(-50%, -50%) rotate(30deg) translateY(-120px);
-}
-
-.ruleta span:nth-child(2) {
-    transform: translate(-50%, -50%) rotate(90deg) translateY(-120px);
-}
-
-.ruleta span:nth-child(3) {
-    transform: translate(-50%, -50%) rotate(150deg) translateY(-120px);
-}
-
-.ruleta span:nth-child(4) {
-    transform: translate(-50%, -50%) rotate(210deg) translateY(-120px);
-}
-
-.ruleta span:nth-child(5) {
-    transform: translate(-50%, -50%) rotate(270deg) translateY(-120px);
-}
-
-.ruleta span:nth-child(6) {
-    transform: translate(-50%, -50%) rotate(330deg) translateY(-120px);
-}
-
-/* Botó */
-.ruleta-button {
-    background-color: #7C0E36;
-    color: #F8C94D;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1rem;
-    font-family: "Trebuchet MS", Arial, sans-serif;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.ruleta-result {
-    margin-top: 20px;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #7C0E36;
-}
-
-/* Footer */
+/* FOOTER */
 .footer {
   background-color: #3E0138;
   color: white;
@@ -490,7 +477,7 @@ body {
   margin: 0 10px;
 }
 
-/* Ratón */
+/* EFECTO RATÓN */
 .cursor-glow {
     position: fixed;
     width: 12px;

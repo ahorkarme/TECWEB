@@ -1,4 +1,18 @@
-/* Header */
+/* RESET BÁSICO */
+/* Afecta toda la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: #FFF6E5;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* HEADER */
 .header {
   background-color: #7C0E36;
   color: white;
@@ -7,95 +21,80 @@
   justify-content: space-between;
   align-items: center;
   font-family: Georgia, "Times New Roman", serif;
-} 
+}
 
-.header a { 
-  color: #F8C94D; 
+.header a {
+  color: #F8C94D;
   text-decoration: none;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-} 
+}
 
 .header a:hover {
   color: #D98139;
 }
 
-.social-media img { 
-  width: 23px; 
-  height: 23px; 
-  margin: 0 5px; 
+.social-media img {
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
 }
 
-/* MENÚ */
-
-.main-nav .menu-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #3E0138;
+/* MENÚ DE NAVEGACIÓN */
+.main-nav {
   width: 100%;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: #3E0138;
 }
 
-.main-nav .menu {
-  float: left;
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-/* Enlaces principales */
-.main-nav li a,
-.main-nav .dropbtn {
-  display: inline-block;
-  color: #F8C94D;
-  text-align: center;
+.menu-list li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
   padding: 14px 16px;
+  color: #F8C94D;
   text-decoration: none;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+  text-align: center;
 }
 
-/* Hover */
-.main-nav li a:hover,
-.main-nav .dropdown:hover .dropbtn {
+.menu-list a:hover {
   background-color: #7C0E36;
 }
 
 /* Dropdown */
-.main-nav .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.main-nav .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #F8C94D;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1000;
 }
 
-/* Enlaces dropdown */
-.main-nav .dropdown-content a {
+.dropdown-content a {
   color: #3E0138;
   padding: 12px 16px;
-  text-decoration: none;
-  display: block;
   text-align: left;
-  font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-.main-nav .dropdown-content a:hover {
+.dropdown-content a:hover {
   background-color: #D98139;
 }
 
-/* Mostrar dropdown */
-.main-nav .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Body */
+/* POSA ACÍ EL CONTINGUT PERSONAL DE CADA PÁGINA */
 
-
-/* Footer */
+/* FOOTER */
 .footer {
   background-color: #3E0138;
   color: white;
@@ -163,7 +162,7 @@
   margin: 0 10px;
 }
 
-/* Ratón */
+/* EFECTO RATÓN */
 .cursor-glow {
     position: fixed;
     width: 12px;
