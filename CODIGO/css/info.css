@@ -1,4 +1,4 @@
-/* Header */
+/* HEADER */
 .header {
   background-color: #7C0E36;
   color: white;
@@ -25,26 +25,25 @@
   margin: 0 5px; 
 }
 
-/* Menú */
-ul {
-  list-style-type: none;
+/* MENÚ */
+
+.main-nav .menu-list {
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #3E0138;
-  position: auto;
-  top: 0;
-  left: 0;
   width: 100%;
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-li.menu {
+.main-nav .menu {
   float: left;
 }
 
-li a,
-.dropbtn {
+/* Enlaces principales */
+.main-nav li a,
+.main-nav .dropbtn {
   display: inline-block;
   color: #F8C94D;
   text-align: center;
@@ -53,25 +52,29 @@ li a,
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-li a:hover,
-.dropdown:hover .dropbtn {
+/* Hover */
+.main-nav li a:hover,
+.main-nav .dropdown:hover .dropbtn {
   background-color: #7C0E36;
 }
 
-li.dropdown {
+/* Dropdown */
+.main-nav .dropdown {
+  position: relative;
   display: inline-block;
 }
 
-.dropdown-content {
+.main-nav .dropdown-content {
   display: none;
   position: absolute;
   background-color: #F8C94D;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
 }
 
-.dropdown-content a {
+/* Enlaces dropdown */
+.main-nav .dropdown-content a {
   color: #3E0138;
   padding: 12px 16px;
   text-decoration: none;
@@ -80,73 +83,90 @@ li.dropdown {
   font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-.dropdown-content a:hover {
+.main-nav .dropdown-content a:hover {
   background-color: #D98139;
 }
 
-.dropdown:hover .dropdown-content {
+/* Mostrar dropdown */
+.main-nav .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Body */
+/* BODY */
+
 body {
   background-color: #FFF6E5;
   margin: 0;
   font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #2B0A1F;
 }
 
-h1 {
-    color: #d98139;
-    text-align: center;
-    font-size: 50px;
-    font-family:Calisto MT;
-    margin-top: 50px;
+/* CONTENEDOR PRINCIPAL */
+
+.info-page {
+  max-width: 1100px;
+  margin: 45px auto;
+  padding: 0 25px 80px;
 }
 
-.intro-image {
-    display: block;
-    margin: 0 auto;
-    width: 700px;
-    height: auto;
-    border: 5px solid #d98139;
-    border-radius: 10px;
+/* TÍTULOS */
+
+.info-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3E0138;
+  margin-bottom: 30px;
 }
 
-section {
-    margin-bottom: 20px;
-    margin-left: 50px;
+.info-section h2 {
+  font-size: 1.8rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+  margin-bottom: 15px;
 }
 
-section h2 {
-    color: #d98139;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* TEXTO */
+
+.info-section p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-align: justify;
 }
 
-section p {
-    margin: 0;
+/* IMAGEN */
+
+.info-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 4px solid #7C0E36;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Lista estilizada */
-.ul.section {
-    list-style-type: square; /* Estilo del marcador */
-    padding-left: 30px; /* Sangría para alinear la lista */
-    margin: 15px 0; /* Espaciado superior e inferior */
-    color: #333; /* Color del texto */
-    font-size: 1rem; /* Tamaño de la fuente */
-    background: none; /* Elimina el fondo */
+/* LISTA ACCESIBILIDAD */
+
+.info-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0 25px;
 }
 
-.ul.section li {
-    margin-bottom: 5px; /* Espaciado entre los elementos de la lista */
-    line-height: 1.5; /* Altura de línea para mayor legibilidad */
-    background: none; /* Elimina cualquier fondo en los elementos de la lista */
+.info-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-/* Marcadores personalizados */
-.ul.section li::marker {
-    color: #d98139; /* Color del marcador */
-    font-size: 1.2rem; /* Tamaño del marcador */
+.info-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #7C0E36;
+  font-size: 1.1rem;
 }
 
 /* Footer */
