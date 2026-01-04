@@ -60,8 +60,31 @@
         </ul>
     </nav>
 
-    <main>
-        <!-- Contenido principal -->
+    <main class="contenido-principal">
+
+        <section class="game-container">
+            <h1>🎬 ¿Qué personaje de ficción eres?</h1>
+            <p class="intro">
+                Responde a unas preguntas y descubre qué personaje encaja contigo.
+            </p>
+
+            <!-- Quiz -->
+            <div id="quiz">
+                <div class="question">
+                    <p>1. ¿Qué prefieres hacer en tu tiempo libre?</p>
+                    <button onclick="answer('aventurero')">Explorar lugares nuevos</button>
+                    <button onclick="answer('intelectual')">Leer o investigar</button>
+                    <button onclick="answer('rebelde')">Romper las reglas</button>
+                </div>
+            </div>
+
+            <!-- Resultado -->
+            <div id="result" class="hidden">
+                <h2 id="result-title"></h2>
+                <p id="result-text"></p>
+                <button onclick="restart()">Volver a jugar</button>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

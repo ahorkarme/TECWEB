@@ -93,6 +93,96 @@ body {
 }
 
 /* POSA ACÍ EL CONTINGUT PERSONAL DE CADA PÁGINA */
+/* CONTENIDO PRINCIPAL */
+.contenido-principal {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR DEL JUEGO */
+.game-container {
+  background-color: #FFF;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(62, 1, 56, 0.25);
+  text-align: center;
+}
+
+/* TÍTULO */
+.game-container h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+  margin-bottom: 15px;
+}
+
+/* TEXTO INTRO */
+.game-container .intro {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #3E0138;
+}
+
+/* PREGUNTA */
+.question p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3E0138;
+}
+
+/* BOTONES */
+.game-container button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #7C0E36;
+  color: #F8C94D;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-container button:hover {
+  background-color: #3E0138;
+  transform: scale(1.02);
+}
+
+/* RESULTADO */
+#result h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+  margin-bottom: 10px;
+}
+
+#result p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #3E0138;
+}
+
+/* OCULTO */
+.hidden {
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .game-container {
+    padding: 20px;
+  }
+
+  .game-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
 
 /* FOOTER */
 .footer {
