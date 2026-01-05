@@ -242,6 +242,64 @@ body {
   cursor: pointer;
 }
 
+/* POP-UP */
+.popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  background-color: #F8C94D;
+  color: #3E0138;
+
+  padding: 25px 30px;
+  border-radius: 20px;
+  border: 2px solid #3E0138;
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+
+  animation: fadeInPopup 0.4s ease;
+}
+
+/* Texto del popup */
+.popup p {
+  margin-bottom: 20px;
+}
+
+/* Botón aceptar del popup */
+#cerrarPopup {
+  background-color: #F8C94D;
+  color: #3E0138;
+
+  border: 2px solid #3E0138;
+  border-radius: 20px;
+
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover coherente con el resto de botones */
+#cerrarPopup:hover {
+  background-color: #7C0E36;
+  color: #F8C94D;
+  border-color: #7C0E36;
+}
+
+/* Oculto */
+.hidden {
+  display: none;
+}
+
 /* FOOTER */
 .footer {
   background-color: #3E0138;

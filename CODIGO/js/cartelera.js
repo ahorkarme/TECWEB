@@ -1,8 +1,16 @@
 /*    VER / OCULTAR DETALLES    */
+/* Se seleccionan todos los botones "Ver detalles" */
 document.querySelectorAll(".ver-mas").forEach(btn => {
+
   btn.addEventListener("click", () => {
+
+    /* El contenido extra está justo después del botón */
     const extra = btn.nextElementSibling;
+
+    /* Se alterna la clase hidden */
     extra.classList.toggle("hidden");
+
+    /* Se cambia el texto del botón */
     btn.textContent = extra.classList.contains("hidden")
       ? "Ver detalles"
       : "Ocultar detalles";
@@ -14,72 +22,91 @@ const filtroGenero = document.getElementById("filtroGenero");
 const filtroDuracion = document.getElementById("filtroDuracion");
 const peliculas = document.querySelectorAll(".pelicula-row");
 
+/* Función que aplica los filtros seleccionados */
 function aplicarFiltros() {
+
   const genero = filtroGenero.value;
   const duracion = filtroDuracion.value;
 
   peliculas.forEach(peli => {
+
+    /* Se obtienen los valores desde los atributos data-* */
     const peliGenero = peli.dataset.genero;
     const peliDuracion = parseInt(peli.dataset.duracion, 10);
 
     let mostrar = true;
 
-    /* FILTRO GÉNERO */
+    /* Filtro por género */
     if (genero !== "all" && peliGenero !== genero) {
       mostrar = false;
     }
 
-    /* FILTRO DURACIÓN (MINUTOS REALES) */
-    if (duracion === "corta") {
-      if (peliDuracion > 60) mostrar = false;
-    }
+    /* Filtro por duración */
+    if (duracion === "corta" && peliDuracion > 60) mostrar = false;
+    if (duracion === "media" && peliDuracion > 90) mostrar = false;
+    if (duracion === "larga" && peliDuracion <= 90) mostrar = false;
 
-    if (duracion === "media") {
-      if (peliDuracion > 90) mostrar = false;
-    }
-
-    if (duracion === "larga") {
-      if (peliDuracion <= 90) mostrar = false;
-    }
-
+    /* Se muestra u oculta la película */
     peli.style.display = mostrar ? "flex" : "none";
   });
 }
 
+/* Eventos de cambio en los filtros */
 if (filtroGenero && filtroDuracion) {
   filtroGenero.addEventListener("change", aplicarFiltros);
   filtroDuracion.addEventListener("change", aplicarFiltros);
 }
 
-/*    FORMULARIO ENTRADAS    */
-document.getElementById("formCartelera").addEventListener("submit", e => {
-  e.preventDefault();
+/*    BUSCADOR DE PELÍCULAS POR TEXTO    */
+const buscador = document.getElementById("buscadorPeliculas");
 
-  const peli = document.getElementById("selectPelicula").value;
-  const hora = document.getElementById("selectHorario").value;
+/* Filtra películas según el texto introducido */
+if (buscador) {
 
-  if (!peli || !hora) return;
+  buscador.addEventListener("input", () => {
 
-  /* POP UP EN PÁGINA */
-  const popup = document.createElement("div");
-  popup.textContent = "🎟️ Entradas enviadas a tu correo";
-  popup.style.position = "fixed";
-  popup.style.bottom = "30px";
-  popup.style.right = "30px";
-  popup.style.background = "#F8C94D";
-  popup.style.color = "#3E0138";
-  popup.style.padding = "15px 25px";
-  popup.style.borderRadius = "30px";
-  popup.style.fontFamily = "Trebuchet MS, Arial, sans-serif";
-  popup.style.boxShadow = "0 6px 15px rgba(0,0,0,0.3)";
-  popup.style.zIndex = "9999";
+    const texto = buscador.value.toLowerCase();
 
-  document.body.appendChild(popup);
+    peliculas.forEach(peli => {
 
-  setTimeout(() => popup.remove(), 3000);
+      /* Se busca el texto dentro del contenido de la tarjeta */
+      const contenido = peli.textContent.toLowerCase();
 
-  e.target.reset();
-});
+      peli.style.display = contenido.includes(texto)
+        ? "flex"
+        : "none";
+    });
+  });
+}
+
+
+/*    FORMULARIO COMPRA DE ENTRADAS    */
+const form = document.getElementById("formCartelera");
+const popup = document.getElementById("popupConfirmacion");
+
+if (form && popup) {
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const peli = document.getElementById("selectPelicula").value;
+    const hora = document.getElementById("selectHorario").value;
+
+    /* Validación básica */
+    if (!peli || !hora) return;
+
+    /* Se muestra el popup existente en el HTML */
+    popup.classList.remove("hidden");
+
+    /* Se oculta automáticamente tras 3 segundos */
+    setTimeout(() => {
+      popup.classList.add("hidden");
+    }, 3000);
+
+    /* Se reinicia el formulario */
+    form.reset();
+  });
+}
 
 /*    RATÓN    */
 /* Efecto visual que sigue el movimiento del ratón */
