@@ -1,4 +1,4 @@
-* RESET BÁSICO */
+/* RESET BÁSICO */
 /* Afecta a toda la página */
 * {
   margin: 0;
@@ -97,49 +97,47 @@ body {
 /* CONTENEDOR PRINCIPAL */
 main {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 0 auto 40px auto;
   padding: 0 20px;
+  overflow: hidden;
+}
+
+.salas-page {
+  padding-top: 40px;
 }
 
 /* TÍTULOS */
 h1 {
-  text-align: center;
+  margin-top: 60px;
   font-size: 2.8rem;
   font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
   color: #3E0138;
-  margin-bottom: 40px;
 }
 
 h2 {
+  font-size: 30px;
+  margin-top: 30px;
   text-align: center;
-  font-size: 2rem;
-  font-family: Georgia, "Times New Roman", serif;
-  color: #7C0E36;
-  margin: 40px 0 20px;
+  color: #3E0138;
 }
 
 h3 {
-  font-size: 1.4rem;
-  font-family: Georgia, "Times New Roman", serif;
-  color: #7C0E36;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-style: italic;
+  color: #3E0138;
+  margin-bottom: 20px;
 }
 
 /* TEXTO */
 p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  color: #2B0A1F;
+  font-size: 16px;
+  margin: 20px 10%;
+  text-align: center;
 }
 
 /* GALERÍA DE SALAS */
-.salas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-bottom: 60px;
-}
-
 .sala-card {
   position: relative;
   border-radius: 15px;
@@ -159,23 +157,11 @@ p {
   object-fit: cover;
 }
 
-.sala-overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 15px;
-  background: linear-gradient(
-    to top,
-    rgba(62,1,56,0.85),
-    rgba(62,1,56,0.2)
-  );
-  color: #F8C94D;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.4rem;
-  text-align: center;
+/* INFO SALA */
+.salas-intro {
+  margin-bottom: 40px;
 }
 
-/* INFO SALA */
 .sala-info {
   background-color: #FFF1D6;
   border-radius: 15px;
