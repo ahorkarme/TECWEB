@@ -10,6 +10,21 @@ function reset(){
     formulario.reset()
   }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const showFormBtn = document.getElementById('showFormBtn');
+    const form = document.getElementById('form');
+
+    showFormBtn.addEventListener('click', function() {
+        if (form.classList.contains('show')) {
+            form.classList.remove('show');
+            showFormBtn.textContent = 'Contactar con nosotros';
+        } else {
+            form.classList.add('show');
+            showFormBtn.textContent = 'Ocultar formulario';
+        }
+    });
+});
+
   /*    RATÓN    */
 
 document.addEventListener("mousemove", (e) => {

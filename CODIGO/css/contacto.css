@@ -116,6 +116,18 @@ legend{
  }
 fieldset{
   margin: 3% 8% 0% 8%;
+  transition: opacity 0.5s ease;
+}
+
+.hidden-form {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hidden-form.show {
+  visibility: visible;
+  opacity: 1;
 }
 button{
   background-color: #F8C94D;
@@ -128,6 +140,26 @@ button{
   font-size: 1rem;
   font-weight: bold;
   font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.contact-btn {
+    background-color: transparent;
+    border: 2px solid #7C0E36;
+    color: #7C0E36;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", "Trebuchet MS", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.contact-btn:hover {
+  background: #F8C94D;
+  color: transparent;
 }
 
 /* FOOTER */
