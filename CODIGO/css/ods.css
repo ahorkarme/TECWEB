@@ -97,8 +97,8 @@ body {
 /* CONTENIDO DE LAS ODS */
 .ods-page {
   max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 /* INTRODUCCIÓN */
@@ -280,10 +280,6 @@ body {
   margin-top: 10px;
   font-weight: bold;
   color: #7C0E36;
-}
-
-.hidden {
-  display: none;
 }
 
 /* DRAG & DROP + FEEDBACK */
