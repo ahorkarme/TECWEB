@@ -175,23 +175,26 @@ main {
   color: #3E0138;
 }
 
+/* Contenedor de las imágenes del resultado */
+.result-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+/* Imágenes del resultado */
+.result-images img {
+  width: 150px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+
 /* OCULTO */
 .hidden {
   display: none;
 }
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .game-container {
-    padding: 20px;
-  }
-
-  .game-container h1 {
-    font-size: 1.5rem;
-  }
-}
-
-
 
 /* FOOTER */
 .footer {
