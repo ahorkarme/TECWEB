@@ -93,29 +93,50 @@ body {
   display: block;
 }
 
-/* CONTENIDO PRINCIPAL */
-input{
- background-color: #F8C94D;
+/* INPUTS Y TEXTAREA */
+input, textarea{
+  background-color: #F8C94D;
+  border: 1px solid #D98139;
+  padding: 8px 10px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 1rem;
 }
-textarea{
- background-color: #F8C94D;
-}
+
+/* TÍTULO PRINCIPAL */
 h1 {
-color: rgba(62, 1, 56, 0.75) ;
-text-align: center;
-font-size: 40px;
-font-family: Calisto MT, cursive;
-margin-top: 60px;
+  color: #3E0138;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Calisto MT", Georgia, serif;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
+
+/* FIELDSET Y LEGEND */
 legend{
- color: #3E0138;
- font-family:Calisto MT;
- font-size: 17px;
- margin: 3% 8% 0% 8%;
- text-align: justify;
+  color: #3E0138;
+  font-family: "Calisto MT", Georgia, serif;
+  font-size: 17px;
+  margin: 3% 8% 0% 8%;
+  text-align: justify;
  }
+
 fieldset{
   margin: 3% 8% 0% 8%;
+  padding: 20px;
+  border: 1px solid #D98139;
+  transition: opacity 0.5s ease;
+}
+
+.hidden-form {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hidden-form.show {
+  visibility: visible;
+  opacity: 1;
 }
 button{
   background-color: #F8C94D;
@@ -128,6 +149,25 @@ button{
   font-size: 1rem;
   font-weight: bold;
   font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.contact-btn {
+  background-color: #F8C94D;
+  color: #3E0138;
+  width: 130px;
+  height: 40px;
+  margin: 20px 10px 40px 8%;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #7C0E36;
+  color: #F8C94D;
 }
 
 /* FOOTER */
@@ -224,4 +264,23 @@ button{
         transform: scale(2);
         opacity: 0;
     }
+}
+
+/* MENSAJE DE ÉXITO */
+.success-message {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.success-message img {
+    width: 100px;
+    height: 100px;
+}
+
+.success-message p {
+    font-size: 18px;
+    color: #3E0138;
+    margin-top: 20px;
 }
