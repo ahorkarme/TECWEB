@@ -1,40 +1,82 @@
-  /*    FORMULARIO DE CONTACTO    */
+/*    MOSTRAR / OCULTAR FORMULARIO DE CONTACTO    */
+/* Se espera a que el DOM esté completamente cargado */
+document.addEventListener('DOMContentLoaded', () => {
 
-function enviar(){
+    const showFormBtn = document.getElementById('showFormBtn');
+    const form = document.getElementById('form');
+    const successMessage = document.querySelector('.success-message');
+    const resetFormBtn = document.getElementById('resetFormBtn');
+
+    /* Mostrar / ocultar formulario */
+    showFormBtn.addEventListener('click', () => {
+
+        form.classList.toggle('show');
+        successMessage.classList.remove('show');
+
+        showFormBtn.textContent = form.classList.contains('show')
+            ? 'Ocultar formulario'
+            : 'Mostrar formulario';
+    });
+
+    /* Botón "Enviar otra respuesta" */
+    resetFormBtn.addEventListener('click', () => {
+
+        successMessage.classList.remove('show');
+        form.classList.add('show');
+        form.reset();
+
+        showFormBtn.textContent = 'Ocultar formulario';
+    });
+});
+
+/*    VALIDACIÓN Y ENVÍO DEL FORMULARIO DE CONTACTO    */
+
+/* Función que se ejecuta al pulsar el botón "Enviar" */
+function enviar() {
+
+    /* Se obtienen los valores de los campos del formulario */
     const nombre = document.getElementById('nom').value.trim();
-    const correo = document.getElementById('correoe').value.trim();
+    const correo = document.getElementById('correo').value.trim();
     const comentario = document.getElementById('comentario').value.trim();
 
+    /* Se comprueba que todos los campos estén rellenos */
     if (nombre && correo && comentario) {
-        // Ocultar el formulario
-        document.getElementById('form').style.display = 'none';
-        // Mostrar el mensaje de éxito
-        document.querySelector('.success-message').style.display = 'block';
-        return false; // Prevenir el envío del formulario
+
+        /* Se oculta el formulario */
+        document.getElementById('form').classList.remove('show');
+
+        /* Se muestra el mensaje de confirmación */
+        document.querySelector('.success-message').classList.add('show');
+
+        /* Se evita el envío real del formulario */
+        return false;
+
     } else {
+
+        /* Mensaje de aviso si falta algún campo */
         alert('Por favor, rellena todos los campos.');
         return false;
     }
 }
-function reset(){
-    const formulario= document.getElementById('form');
-    formulario.reset()
-  }
 
-document.addEventListener('DOMContentLoaded', function() {
-    const showFormBtn = document.getElementById('showFormBtn');
+/*    REINICIO MANUAL DEL FORMULARIO    */
+
+/* Función asociada al botón de tipo reset */
+function resetForm() {
+
+    /* Se obtiene el formulario */
     const form = document.getElementById('form');
+    const successMessage = document.querySelector('.success-message');
 
-    showFormBtn.addEventListener('click', function() {
-        if (form.classList.contains('show')) {
-            form.classList.remove('show');
-            showFormBtn.textContent = 'Contactar con nosotros';
-        } else {
-            form.classList.add('show');
-            showFormBtn.textContent = 'Ocultar formulario';
-        }
-    });
-});
+    /* Se reinician todos los campos */
+    form.reset();
+
+    /* Se asegura que el formulario vuelva a mostrarse */
+    form.classList.add('show');
+
+    /* Se oculta el mensaje de éxito si estaba visible */
+    successMessage.classList.remove('show');
+}
 
 /*    RATÓN    */
 /* Efecto visual que sigue el movimiento del ratón */

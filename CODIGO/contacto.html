@@ -66,8 +66,13 @@
         <!-- Contacto -->
         <section>
             <h1>¡Ponte en contacto con nosotros!</h1>
+        
+            <!-- Botón para mostrar u ocultar el formulario -->
+            <button id="showFormBtn" type="button" class="contact-btn">
+                Contactar con nosotros
+            </button>
 
-
+            <!-- Formulario -->
             <form id="form"
                   action="mailto:info@cineslumiere.com"
                   method="post"
@@ -76,7 +81,8 @@
                 <fieldset>
                     <legend>Tus datos de contacto</legend>
 
-                    <label for="nom">Nombre:</label><br>
+                    <label for="nom">Nombre:</label>
+                    <br>
                     <input type="text"
                            id="nom"
                            name="nombre"
@@ -84,11 +90,13 @@
                            size="60"
                            required
                            autofocus>
-                    <br><br>
+                    
+                    <br>
 
-                    <label for="correoe">Correo electrónico:</label><br>
+                    <label for="correo">Correo electrónico:</label>
+                    <br>
                     <input type="email"
-                           id="correoe"
+                           id="correo"
                            name="correo"
                            placeholder="Escriba su correo electrónico..."
                            size="60"
@@ -98,24 +106,39 @@
                 <fieldset>
                     <legend>Comentarios</legend>
 
-                    <label for="comentario">Qué desea contarnos:</label><br>
+                    <label for="comentario">Qué desea contarnos:</label>
+                    <br>
                     <textarea id="comentario"
                               name="comentario"
+                              placeholder="Motivo de consulta..."
                               rows="10"
                               cols="55"></textarea>
                 </fieldset>
-
+                
                 <br>
 
-                <button class="contact-btn" type="submit" onclick="return enviar()">Enviar</button>
-                <button class="contact-btn" type="reset">Borrar todo</button>
+                <!-- Botones de envio y borrado -->
+                <button class="contact-btn" type="submit" onclick="return enviar()">
+                    Enviar
+                </button>
+
+                <button type="button" class="contact-btn" onclick="resetForm()">
+                    Borrar todo
+                </button>
 
             </form>
-
+            
+            <!-- Mensaje de validación -->
             <div class="success-message">
-                <img src="img/contacto.jpg" alt="Mensaje enviado">
+                <img src="img/contacto.png" alt="Mensaje enviado">
                 <p>¡Le responderemos en breves!</p>
+
+                <!-- Botón para volver a enviar el formulario -->
+                <button id="resetFormBtn" class="contact-btn">
+                    Enviar otra respuesta
+                </button>
             </div>
+
         </section>
 
     </main>

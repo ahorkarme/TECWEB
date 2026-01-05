@@ -102,6 +102,11 @@ input, textarea{
   font-size: 1rem;
 }
 
+/* CONTENIDO PRINCIPAL */
+main {
+  min-height: 70vh;
+}
+
 /* TÍTULO PRINCIPAL */
 h1 {
   color: #3E0138;
@@ -113,45 +118,45 @@ h1 {
 }
 
 /* FIELDSET Y LEGEND */
-legend{
+legend {
   color: #3E0138;
-  font-family: "Calisto MT", Georgia, serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
   font-size: 17px;
   margin: 3% 8% 0% 8%;
   text-align: justify;
- }
+}
 
-fieldset{
+fieldset {
   margin: 3% 8% 0% 8%;
   padding: 20px;
   border: 1px solid #D98139;
-  transition: opacity 0.5s ease;
 }
 
-.hidden-form {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+/* ESTADOS DEL FORMULARIO */
+/* Formulario oculto por defecto */
+#form {
+  display: none;
 }
 
-.hidden-form.show {
-  visibility: visible;
-  opacity: 1;
-}
-button{
-  background-color: #F8C94D;
-  color: #3E0138;
-  width: 130px;
-  height: 40px;
-  font-family:Calisto MT;
-  font-size: 17px;
-  margin: 2% 0% 4% 8% ;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "Trebuchet MS", Arial, sans-serif;
+/* Formulario visible */
+#form.show {
+  display: block;
 }
 
-.contact-btn {
+/* Mensaje de éxito oculto */
+.success-message {
+  display: none;
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Mensaje de éxito visible */
+.success-message.show {
+  display: block;
+}
+
+/* BOTONES */
+button {
   background-color: #F8C94D;
   color: #3E0138;
   width: 130px;
@@ -160,14 +165,51 @@ button{
   font-size: 1rem;
   font-weight: bold;
   font-family: "Trebuchet MS", Arial, sans-serif;
-  border: none;
+  border: 2px solid #7c0e36;
   cursor: pointer;
+}
+
+/* Botones específicos de contacto */
+.contact-btn {
   transition: background-color 0.3s ease;
 }
 
 .contact-btn:hover {
   background-color: #7C0E36;
   color: #F8C94D;
+}
+
+/* Botón mostrar / ocultar formulario */
+#showFormBtn {
+  display: block;
+  margin: 25px auto 35px auto;
+}
+
+/* Botón enviar otra respuesta */
+#resetFormBtn {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+/* MENSAJE DE ÉXITO */
+.success-message {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.success-message img {
+  width: 300px;
+  max-width: 100%;
+  margin: 25px auto;
+  display: block;
+}
+
+.success-message p {
+    font-size: 18px;
+    color: #3E0138;
+    margin-top: 20px;
 }
 
 /* FOOTER */
@@ -264,23 +306,4 @@ button{
         transform: scale(2);
         opacity: 0;
     }
-}
-
-/* MENSAJE DE ÉXITO */
-.success-message {
-    display: none;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-.success-message img {
-    width: 100px;
-    height: 100px;
-}
-
-.success-message p {
-    font-size: 18px;
-    color: #3E0138;
-    margin-top: 20px;
 }
