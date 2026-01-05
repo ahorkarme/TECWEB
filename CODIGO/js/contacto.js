@@ -1,10 +1,21 @@
   /*    FORMULARIO DE CONTACTO    */
 
 function enviar(){
-    const nombre = document.getElementById('nom').value;
-    const correo = document.getElementById('correoe').value;
-    const comentario = document.getElementById('comentario').value;
-  }
+    const nombre = document.getElementById('nom').value.trim();
+    const correo = document.getElementById('correoe').value.trim();
+    const comentario = document.getElementById('comentario').value.trim();
+
+    if (nombre && correo && comentario) {
+        // Ocultar el formulario
+        document.getElementById('form').style.display = 'none';
+        // Mostrar el mensaje de éxito
+        document.querySelector('.success-message').style.display = 'block';
+        return false; // Prevenir el envío del formulario
+    } else {
+        alert('Por favor, rellena todos los campos.');
+        return false;
+    }
+}
 function reset(){
     const formulario= document.getElementById('form');
     formulario.reset()

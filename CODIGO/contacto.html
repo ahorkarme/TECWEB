@@ -65,14 +65,13 @@
 
         <!-- Contacto -->
         <section>
-            <h1>Contacto</h1>
+            <h1>¡Ponte en contacto con nosotros!</h1>
 
 
             <form id="form"
                   action="mailto:info@cineslumiere.com"
                   method="post"
-                  enctype="text/plain"
-                  class="hidden-form">
+                  enctype="text/plain">
 
                 <fieldset>
                     <legend>Tus datos de contacto</legend>
@@ -108,10 +107,15 @@
 
                 <br>
 
-                <button class="contact-btn" type="submit" onclick="enviar()">Enviar</button>
+                <button class="contact-btn" type="submit" onclick="return enviar()">Enviar</button>
                 <button class="contact-btn" type="reset">Borrar todo</button>
 
             </form>
+
+            <div class="success-message">
+                <img src="img/contacto.jpg" alt="Mensaje enviado">
+                <p>¡Le responderemos en breves!</p>
+            </div>
         </section>
 
     </main>
