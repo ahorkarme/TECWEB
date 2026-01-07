@@ -1,0 +1,309 @@
+/* RESET BÁSICO */
+/* Afecta a toda la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: #FFF6E5;
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+  background-color: #7C0E36;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.header a {
+  color: #F8C94D;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #D98139;
+}
+
+.social-media img {
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.main-nav {
+  width: 100%;
+  background-color: #3E0138;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
+  padding: 14px 16px;
+  color: #F8C94D;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-list a:hover {
+  background-color: #7C0E36;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F8C94D;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #3E0138;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #D98139;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* INPUTS Y TEXTAREA */
+input, textarea{
+  background-color: #F8C94D;
+  border: 1px solid #D98139;
+  padding: 8px 10px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  min-height: 70vh;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+  color: #3E0138;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Calisto MT", Georgia, serif;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/* FIELDSET Y LEGEND */
+legend {
+  color: #3E0138;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 17px;
+  margin: 3% 8% 0% 8%;
+  text-align: justify;
+}
+
+fieldset {
+  margin: 3% 8% 0% 8%;
+  padding: 20px;
+  border: 1px solid #D98139;
+}
+
+/* ESTADOS DEL FORMULARIO */
+/* Formulario oculto por defecto */
+#form {
+  display: none;
+}
+
+/* Formulario visible */
+#form.show {
+  display: block;
+}
+
+/* Mensaje de éxito oculto */
+.success-message {
+  display: none;
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Mensaje de éxito visible */
+.success-message.show {
+  display: block;
+}
+
+/* BOTONES */
+button {
+  background-color: #F8C94D;
+  color: #3E0138;
+  width: 130px;
+  height: 40px;
+  margin: 20px 10px 40px 8%;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  border: 2px solid #7c0e36;
+  cursor: pointer;
+}
+
+/* Botones específicos de contacto */
+.contact-btn {
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #7C0E36;
+  color: #F8C94D;
+}
+
+/* Botón mostrar / ocultar formulario */
+#showFormBtn {
+  display: block;
+  margin: 25px auto 35px auto;
+}
+
+/* Botón enviar otra respuesta */
+#resetFormBtn {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+/* MENSAJE DE ÉXITO */
+.success-message {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.success-message img {
+  width: 300px;
+  max-width: 100%;
+  margin: 25px auto;
+  display: block;
+}
+
+.success-message p {
+    font-size: 18px;
+    color: #3E0138;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #3E0138;
+  color: white;
+  padding: 20px 20px;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-contact {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.footer-contact h3 {
+  color: #F8C94D;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer-contact p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  flex: 1;
+  text-align: right;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: #D98139;
+  text-decoration: none;
+  margin: 0 5px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.footer-bottom a:hover {
+  color: #F8C94D;
+  text-decoration: underline;
+}
+
+.footer-logos {
+  margin-top: 10px;
+}
+
+.footer-logos img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+/* EFECTO RATÓN */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

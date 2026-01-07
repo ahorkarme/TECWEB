@@ -1,0 +1,293 @@
+/* RESET BÁSICO */
+/* Afecta toda la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: #FFF6E5;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+/* HEADER */
+.header {
+  background-color: #7C0E36;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.header a {
+  color: #F8C94D;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #D98139;
+}
+
+.social-media img {
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.main-nav {
+  width: 100%;
+  background-color: #3E0138;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
+  padding: 14px 16px;
+  color: #F8C94D;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-list a:hover {
+  background-color: #7C0E36;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F8C94D;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #3E0138;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #D98139;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* POSA ACÍ EL CONTINGUT PERSONAL DE CADA PÁGINA */
+/* CONTENIDO PRINCIPAL */
+.contenido-principal {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR DEL JUEGO */
+.game-container {
+  background-color: #FFF;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(62, 1, 56, 0.25);
+  text-align: center;
+}
+
+/* TÍTULO */
+.game-container h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+  margin-bottom: 15px;
+}
+
+/* TEXTO INTRO */
+.game-container .intro {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #3E0138;
+}
+
+/* PREGUNTA */
+.question p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3E0138;
+}
+
+/* BOTONES */
+.game-container button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #7C0E36;
+  color: #F8C94D;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-container button:hover {
+  background-color: #3E0138;
+  transform: scale(1.02);
+}
+
+/* RESULTADO */
+#result h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+  margin-bottom: 10px;
+}
+
+#result p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #3E0138;
+}
+
+/* Contenedor de las imágenes del resultado */
+.result-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+/* Imágenes del resultado */
+.result-images img {
+  width: 150px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+
+/* OCULTO */
+.hidden {
+  display: none;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #3E0138;
+  color: white;
+  padding: 20px 20px;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-contact {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.footer-contact h3 {
+  color: #F8C94D;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer-contact p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  flex: 1;
+  text-align: right;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: #D98139;
+  text-decoration: none;
+  margin: 0 5px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.footer-bottom a:hover {
+  color: #F8C94D;
+  text-decoration: underline;
+}
+
+.footer-logos {
+  margin-top: 10px;
+}
+
+.footer-logos img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+/* EFECTO RATÓN */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

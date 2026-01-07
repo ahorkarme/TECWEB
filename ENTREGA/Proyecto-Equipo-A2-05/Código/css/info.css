@@ -1,0 +1,259 @@
+/* RESET BÁSICO */
+/* Afecta a toda la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: #FFF6E5;
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #2B0A1F;
+}
+
+/* HEADER */
+.header {
+  background-color: #7C0E36;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.header a {
+  color: #F8C94D;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #D98139;
+}
+
+.social-media img {
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.main-nav {
+  width: 100%;
+  background-color: #3E0138;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
+  padding: 14px 16px;
+  color: #F8C94D;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-list a:hover {
+  background-color: #7C0E36;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F8C94D;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #3E0138;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #D98139;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.info-page {
+  max-width: 1100px;
+  margin: 45px auto;
+  padding: 0 25px 80px;
+}
+
+/* TÍTULOS */
+
+.info-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3E0138;
+  margin-bottom: 30px;
+}
+
+.info-section h2 {
+  font-size: 1.8rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+  margin-bottom: 15px;
+}
+
+/* TEXTO */
+
+.info-section p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* IMAGEN */
+
+.info-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 4px solid #7C0E36;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* LISTA ACCESIBILIDAD */
+
+.info-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0 25px;
+}
+
+.info-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.info-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #7C0E36;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #3E0138;
+  color: white;
+  padding: 20px 20px;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-contact {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.footer-contact h3 {
+  color: #F8C94D;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer-contact p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  flex: 1;
+  text-align: right;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: #D98139;
+  text-decoration: none;
+  margin: 0 5px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.footer-bottom a:hover {
+  color: #F8C94D;
+  text-decoration: underline;
+}
+
+.footer-logos {
+  margin-top: 10px;
+}
+
+.footer-logos img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+/* EFECTO RATÓN */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

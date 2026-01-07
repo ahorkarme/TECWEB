@@ -1,0 +1,397 @@
+/* RESET BÁSICO */
+/* Afecta a toda la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  background-color: #FFF6E5;
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #2B0A1F;
+}
+
+/* HEADER */
+.header {
+  background-color: #7C0E36;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.header a {
+  color: #F8C94D;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #D98139;
+}
+
+.social-media img {
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.main-nav {
+  width: 100%;
+  background-color: #3E0138;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
+  padding: 14px 16px;
+  color: #F8C94D;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu-list a:hover {
+  background-color: #7C0E36;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F8C94D;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #3E0138;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #D98139;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* CONTENEDOR GENERAL */
+.cartelera-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* INTRODUCCIÓN */
+.cartelera-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cartelera-intro h1 {
+  font-size: 2.8rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3E0138;
+}
+
+.cartelera-intro p {
+  max-width: 700px;
+  margin: 15px auto;
+  font-size: 1.1rem;
+}
+
+/* FILTROS DE BÚSQUEDA */
+.cartelera-filtros {
+  background-color: #FFF1D6;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.cartelera-filtros h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+}
+
+.filtros-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.filtros-container select,
+.filtros-container input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 2px solid #7C0E36;
+  font-family: inherit;
+}
+
+/* LISTA DE PELÍCULAS */
+.cartelera-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* FILA PELÍCULA */
+.pelicula-row {
+  display: flex;
+  gap: 20px;
+  background: white;
+  border: 2px solid #D98139;
+  border-radius: 15px;
+  padding: 15px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* IMAGEN */
+.pelicula-row img {
+  width: 120px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* INFORMACIÓN */
+.peli-info h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #7C0E36;
+  margin: 0 0 5px;
+}
+
+.peli-info p {
+  margin: 5px 0 10px;
+  font-size: 0.95rem;
+}
+
+/* BOTÓN VER MÁS */
+.ver-mas {
+  background: transparent;
+  border: 2px solid #7C0E36;
+  color: #7C0E36;
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.ver-mas:hover {
+  background-color: #7C0E36;
+  color: #F8C94D;
+}
+
+/* DESPLEGABLE */
+.pelicula-extra {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #FFF1D6;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* FORMULARIO */
+.cartelera-form {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #FFF1D6;
+  border-radius: 12px;
+}
+
+.cartelera-form h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #3E0138;
+}
+
+.cartelera-form select,
+.cartelera-form button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  font-family: inherit;
+}
+
+.cartelera-form button {
+  background-color: #7C0E36;
+  color: #F8C94D;
+  cursor: pointer;
+}
+
+/* POP-UP */
+.popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  background-color: #F8C94D;
+  color: #3E0138;
+
+  padding: 25px 30px;
+  border-radius: 20px;
+  border: 2px solid #3E0138;
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+
+  animation: fadeInPopup 0.4s ease;
+}
+
+/* Texto del popup */
+.popup p {
+  margin-bottom: 20px;
+}
+
+/* Botón aceptar del popup */
+#cerrarPopup {
+  background-color: #F8C94D;
+  color: #3E0138;
+
+  border: 2px solid #3E0138;
+  border-radius: 20px;
+
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover coherente con el resto de botones */
+#cerrarPopup:hover {
+  background-color: #7C0E36;
+  color: #F8C94D;
+  border-color: #7C0E36;
+}
+
+/* Oculto */
+.hidden {
+  display: none;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #3E0138;
+  color: white;
+  padding: 20px 20px;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-contact {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.footer-contact h3 {
+  color: #F8C94D;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer-contact p {
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  flex: 1;
+  text-align: right;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: #D98139;
+  text-decoration: none;
+  margin: 0 5px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.footer-bottom a:hover {
+  color: #F8C94D;
+  text-decoration: underline;
+}
+
+.footer-logos {
+  margin-top: 10px;
+}
+
+.footer-logos img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+/* EFECTO RATÓN */
+.cursor-glow {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(
+        circle,
+        rgba(248, 201, 77, 0.9),
+        rgba(248, 201, 77, 0.4),
+        rgba(248, 201, 77, 0)
+    );
+    animation: glowFade 0.8s ease-out forwards;
+    z-index: 9999;
+}
+
+@keyframes glowFade {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
