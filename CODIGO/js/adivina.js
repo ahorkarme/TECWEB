@@ -165,13 +165,13 @@ function showResult() {
 
     /* IMÁGENES */
     const images = {
-        aventurero: ["img/aventurero1.gif", "img/aventurero2.gif"],
-        intelectual: ["img/intelectual1.gif", "img/intelectual2.gif"],
-        rebelde: ["img/rebelde1.gif", "img/rebelde2.gif"],
-        romantico: ["img/romantico1.gif", "img/romantico2.gif"],
-        introvertido: ["img/introvertido1.gif", "img/introvertido2.gif"],
-        extrovertido: ["img/extrovertido1.gif", "img/extrovertido2.gif"],
-        rarito: ["img/rarito1.gif", "img/rarito2.gif"]
+        aventurero: ["../img/adivina/aventurero1.gif", "../img/adivina/aventurero2.gif"],
+        intelectual: ["../img/adivina/intelectual1.gif", "../img/adivina/intelectual2.gif"],
+        rebelde: ["../img/adivina/rebelde1.gif", "../img/adivina/rebelde2.gif"],
+        romantico: ["../img/adivina/romantico1.gif", "../img/adivina/romantico2.gif"],
+        introvertido: ["../img/adivina/introvertido1.gif", "../img/adivina/introvertido2.gif"],
+        extrovertido: ["../img/adivina/extrovertido1.gif", "../img/adivina/extrovertido2.gif"],
+        rarito: ["../img/adivina/rarito1.gif", "../img/adivina/rarito2.gif"]
     };
 
     /* ACTUALIZACIÓN DEL CONTENIDO */
@@ -212,7 +212,6 @@ function restart() {
 }
 
 /*    INICIO DEL JUEGO    */
-
 /* Cuando el DOM está cargado, se muestra la primera pregunta */
 document.addEventListener("DOMContentLoaded", () => {
     loadNextQuestion();

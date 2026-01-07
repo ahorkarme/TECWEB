@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cines Lumiére</title>
+    <link rel="stylesheet" href="../css/recomendaciones.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <span>📞 621 34 56 78</span>
+        <a href="mailto:info@cineslumiere.com">✉️ info@cineslumiere.com</a>
+        <div class="social-media">
+            <a href="https://www.instagram.com/lafilmoteca_gvaivc/">
+                <img src="../img/header/header-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/IVCLaFilmotecaValenciana/">
+                <img src="../img/header/header-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@_lafilmoteca">
+                <img src="../img/header/header-tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://ivc.gva.es/val/audiovisual/programacio/valencia-la-filmoteca">
+                <img src="../img/header/header-linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </header>
+
+    <!-- Menú -->
+    <nav class="main-nav">
+        <ul class="menu-list">
+            <li class="menu"><a href="index.html">INICIO</a></li>
+
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRAS ACTIVIDADES</a>
+                <div class="dropdown-content">
+                    <a href="cartelera.html">La Cartelera</a>
+                    <a href="recomendaciones.html">Nuestras Recomendaciones</a>
+                    <a href="adivina.html">Adivina quién viene al cine</a>
+                    <a href="salas.html">Descubre nuestras salas</a>
+                </div>
+            </li>
+
+            <li class="dropdown menu">
+                <a href="javascript:void(0)" class="dropbtn">NUESTRA VISIÓN</a>
+                <div class="dropdown-content">
+                    <a href="sobrenosotros.html">Sobre nosotros</a>
+                    <a href="ods.html">ODS & Cine</a>
+                </div>
+            </li>
+
+            <li class="menu">
+                <a href="contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="recomendaciones-page">
+
+        <!-- TÍTULO -->
+        <section class="reco-intro">
+            <h1>NUESTRAS RECOMENDACIONES</h1>
+            <p>
+                Una selección cuidada de películas que consideramos esenciales
+                para vivir el cine desde diferentes miradas.
+            </p>
+        </section>
+
+        <!-- BOTONES DE CATEGORÍAS -->
+        <section class="reco-buttons">
+            <button class="reco-btn active" data-section="clasicos">
+                Clásicos indispensables
+            </button>
+            
+            <button class="reco-btn" data-section="proximidad">
+                Cine de proximidad
+            </button>
+
+            <button class="reco-btn" data-section="emocional">
+                Cine emocional
+            </button>
+            
+        </section>
+
+        <!-- SECCIÓN DINÁMICA -->
+        <section class="reco-content">
+
+            <!-- CLÁSICOS INDISPENSABLES -->
+
+            <section class="reco-section clasicos active">
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/le-voyage-dans-le-lune.jpg');">
+                    <div class="reco-overlay">
+                        <h2>LE VOYAGE DANS LA LUNE</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1902</li>
+                            <li><strong>Duración:</strong> 14 min</li>
+                            <li><strong>Dirección:</strong> Georges Méliès</li>
+                            <li><strong>País:</strong> Francia</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x978nd4"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler Viaje a la Luna"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/the-gold-rush.jpg');">
+                    <div class="reco-overlay">
+                        <h2>THE GOLD RUSH</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1925</li>
+                            <li><strong>Duración:</strong> 96 min</li>
+                            <li><strong>Dirección:</strong> Charles Chaplin</li>
+                            <li><strong>País:</strong> EE. UU.</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x9l4xui"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler La Quimera del Oro"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/a-bout-de-souffle.jpg');">
+                    <div class="reco-overlay">
+                        <h2>À BOUT DE SOUFFLE</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1960</li>
+                            <li><strong>Duración:</strong> 90 min</li>
+                            <li><strong>Dirección:</strong> Jean-Luc Godard</li>
+                            <li><strong>País:</strong> Francia</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x9wmjt0"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler Al Final de la Escapada"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/el-septimo-sello.jpg');">
+                    <div class="reco-overlay">
+                        <h2>EL SÉPTIMO SELLO</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1957</li>
+                            <li><strong>Duración:</strong> 96 min</li>
+                            <li><strong>Dirección:</strong> Ingmar Bergman</li>
+                            <li><strong>País:</strong> Suecia</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x87atdq"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler El Séptimo Sello"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/clockwork_orange.jpg');">
+                    <div class="reco-overlay">
+                        <h2>LA NARANJA MECÁNICA</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1971</li>
+                            <li><strong>Duración:</strong> 136 min</li>
+                            <li><strong>Dirección:</strong> Stanley Kubrick</li>
+                            <li><strong>País:</strong> EE. UU.</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x8xvu1m"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler La Naranja Mecánica"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- CINE DE PROXIMIDAD -->
+
+            <section class="reco-section proximidad">
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/el-verdugo.jpg');">
+                    <div class="reco-overlay">
+                        <h2>EL VERDUGO</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1963</li>
+                            <li><strong>Duración:</strong> 90 min</li>
+                            <li><strong>Dirección:</strong> Luis García Berlanga</li>
+                            <li><strong>País:</strong> España</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x7xgry6"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Dailymotion Video Player"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/los-santos-inocentes.jpg');">
+                    <div class="reco-overlay">
+                        <h2>LOS SANTOS INOCENTES</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1984</li>
+                            <li><strong>Duración:</strong> 103 min</li>
+                            <li><strong>Dirección:</strong> Mario Camus</li>
+                            <li><strong>País:</strong> España</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x8g7x2e"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Dailymotion Video Player"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/viridiana.jpg');">
+                    <div class="reco-overlay">
+                        <h2>VIRIDIANA</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1961</li>
+                            <li><strong>Duración:</strong> 90 min</li>
+                            <li><strong>Dirección:</strong> Luis Buñuel</li>
+                            <li><strong>País:</strong> España</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x9hb026"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Dailymotion Video Player"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/bienvenido-mr-marshall.jpg');">
+                    <div class="reco-overlay">
+                        <h2>BIENVENIDO, MR. MARSHALL</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1953</li>
+                            <li><strong>Duración:</strong> 90 min</li>
+                            <li><strong>Dirección:</strong> Luís García Berlanga</li>
+                            <li><strong>País:</strong> España</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x4rt9w9"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Dailymotion Video Player"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" style="background-image: url('../img/recomendaciones/tesis.jpg');">
+                    <div class="reco-overlay">
+                        <h2>TESIS</h2>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1996</li>
+                            <li><strong>Duración:</strong> 125 min</li>
+                            <li><strong>Dirección:</strong> Alejandro Amenábar</li>
+                            <li><strong>País:</strong> España</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x7unu4q"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Dailymotion Video Player"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- CINE EMOCIONAL -->
+
+            <section class="reco-section emocional">
+
+                <article class="reco-film" data-emocion="rabia"
+                        style="background-image: url('../img/recomendaciones/whiplash.jpg');">
+
+                    <div class="reco-overlay">
+                        <h2>WHIPLASH</h2>
+
+                        <span class="emocion-tag">Rabia</span>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 2014</li>
+                            <li><strong>Duración:</strong> 103 min</li>
+                            <li><strong>Dirección:</strong> Damien Chazelle</li>
+                            <li><strong>País:</strong> EEUU</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x7tzgl7"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler Whiplash"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="reco-film" data-emocion="miedo"
+                        style="background-image: url('../img/recomendaciones/hereditary.jpg');">
+
+                    <div class="reco-overlay">
+                        <h2>HEREDITARY</h2>
+
+                        <span class="emocion-tag">Miedo</span>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 2018</li>
+                            <li><strong>Duración:</strong> 126 min</li>
+                            <li><strong>Dirección:</strong> Ari Aster</li>
+                            <li><strong>País:</strong> EEUU</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x7t34o6"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler Hereditary"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" data-emocion="alegria"
+                        style="background-image: url('../img/recomendaciones/sonrisas-y-lagrimas.jpg');">
+
+                    <div class="reco-overlay">
+                        <h2>Sonrisas y Lágrimas</h2>
+
+                        <span class="emocion-tag">Alegria</span>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1965</li>
+                            <li><strong>Duración:</strong> 172 min</li>
+                            <li><strong>Dirección:</strong> Robert Wise</li>
+                            <li><strong>País:</strong> EEUU</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x9p8qhy"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler Sonrisas y Lágrimas"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" data-emocion="tristeza"
+                        style="background-image: url('../img/recomendaciones/la-vida-es-bella.jpg');">
+
+                    <div class="reco-overlay">
+                        <h2>LA VIDA ES BELLA</h2>
+
+                        <span class="emocion-tag">Tristeza</span>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1997</li>
+                            <li><strong>Duración:</strong> 117 min</li>
+                            <li><strong>Dirección:</strong> Roberto Benigni</li>
+                            <li><strong>País:</strong> Italia</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x7vu2mr"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler La Vida Es Bella"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                 <article class="reco-film" data-emocion="asco"
+                        style="background-image: url('../img/recomendaciones/la-matanza-de-texas.jpg');">
+
+                    <div class="reco-overlay">
+                        <h2>LA MATANZA DE TEXAS</h2>
+
+                        <span class="emocion-tag">Asco</span>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1974</li>
+                            <li><strong>Duración:</strong> 83 min</li>
+                            <li><strong>Dirección:</strong> Tobe Hooper</li>
+                            <li><strong>País:</strong> EEUU</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x96akyy"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler La Matanza de Texas"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" data-emocion="romance"
+                        style="background-image: url('../img/recomendaciones/10-razones-para-odiarte.jpg');">
+
+                    <div class="reco-overlay">
+                        <h2>10 RAZONES PARA ODIARTE</h2>
+
+                        <span class="emocion-tag">Romance</span>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1999</li>
+                            <li><strong>Duración:</strong> 97 min</li>
+                            <li><strong>Dirección:</strong> Gil Junger</li>
+                            <li><strong>País:</strong> EEUU</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x4trw8i"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler 10 Razones para Odiarte"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="reco-film" data-emocion="infantil"
+                        style="background-image: url('../img/recomendaciones/porco-rosso.jpg');">
+
+                    <div class="reco-overlay">
+                        <h2>PORCO ROSSO</h2>
+
+                        <span class="emocion-tag">Infantil</span>
+
+                        <ul class="reco-meta">
+                            <li><strong>Año:</strong> 1992</li>
+                            <li><strong>Duración:</strong> 94 min</li>
+                            <li><strong>Dirección:</strong> Hayao Miyazaki</li>
+                            <li><strong>País:</strong> Japón</li>
+                        </ul>
+
+                        <div class="reco-trailer">
+                            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                                <iframe
+                                    src="https://geo.dailymotion.com/player.html?video=x9mx800"
+                                    style="width:100%; height:100%; position:absolute; left:0; top:0; overflow:hidden; border:none;"
+                                    allowfullscreen
+                                    title="Tráiler Porco Rosso"
+                                    allow="web-share">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-contact">
+                <h3>CONTÁCTANOS</h3>
+                <p><strong>Móvil:</strong> 621 34 56 78</p>
+                <p><strong>Correo electrónico:</strong> info@cineslumiere.com</p>
+                <p><strong>Dirección:</strong> Camí de Vera, s/n, Algirós, 46022 València</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© Copyright 2025 <strong>CINES LUMIERE SL</strong> • Todos los derechos reservados.</p>
+                <p>
+                    <a href="info.html">Aviso legal</a> •
+                    <a href="info.html">Política de privacidad</a> •
+                    <a href="info.html">Política de cookies</a> •
+                    <a href="info.html">Accesibilidad</a>
+                </p>
+
+                <div class="footer-logos">
+                    <img src="../img/footer/upv-logo.png" alt="Universitat Politècnica de València">
+                    <img src="../img/footer/gtdm-logo.png" alt="Grado en Tecnología Digital y Multimedia">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/recomendaciones.js"></script>
+
+</body>
+</html>
